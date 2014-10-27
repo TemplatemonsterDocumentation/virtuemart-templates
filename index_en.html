@@ -200,7 +200,7 @@
 </section>
 
 <section class="block-templates" id="getting_started">  
-  <h2><i class="icon-play"></i> Getting Started <small><i>What to click to make this work?</i></small></h2>
+  <h2 href="bla"><i class="icon-play"></i> Getting Started <small><i>What to click to make this work?</i></small></h2>
 
   <div class="row-fluid">
     <div class="span6 text-center img-paraloid">
@@ -418,7 +418,6 @@ However, Joomla! will still operate if your settings do not quite match the ones
                 <li>com_virtuemart.2.0.xx.zip(last version)</li>
                 <li>com_virtuemart_ext_aio.2.0.xx.zip(last version)</li>
               </ul>
-              <p><img alt="virtuemart" src="img/virtuemart.png" height="300" width="703"></p>
               <p>3. Now log into the Joomla admin panel with your username and password.</p>
               <p>4.Go to <strong>Extensions </strong>&gt; <strong>Extension Manager</strong>.</p>
               <p>5. Click the <strong>Browse </strong>button and select the  <strong>com_virtuemart.2.0.xx.zip(last version)</strong> file. Then click the <strong>Upload &amp; Install </strong>button.</p>
@@ -996,9 +995,22 @@ However, Joomla! will still operate if your settings do not quite match the ones
     <h4>Help and Support</h4>
     <ul class="list">
       <li><a href="http://chat.template-help.com/"  target="_blank">Live chat</a></li>
-      <li><a href="http://esupport.template-help.com/index.php?/Tickets/Submit"  target="_blank">Help ticket system</a></li>
+      <li><a href="http://support.template-help.com/index.php?/Tickets/Submit"  target="_blank">Help ticket system</a></li>
     </ul>
   </div>
+<h2>Loading data from Google servers</h2>
+
+<p>Some countries have issues connecting to Google servers. This can cause issues loading Google Fonts and Java Script libraries from Google CDN. To resolve these issues please do the following: </p>
+
+<h4>Can't load Google Fonts: </h4>
+<ol>
+<li>Open \templates\theme****\index.php file</li>
+<li>Locate the line: <br>
+<pre>$doc->addStyleSheet('//fonts.googleapis.com/css?family=[---your_web_font_name_here---]');</pre></li>
+<li>Replace it with the following: <br>
+<pre>$doc->addStyleSheet('//fonts.useso.com/css?family=[---your_web_font_name_here---]');</pre></li>
+
+
 
   <div id="help_doc">
     <h4>Documentation</h4>
