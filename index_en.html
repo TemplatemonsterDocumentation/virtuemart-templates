@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>VirtueMart2 Documentation</title>
+  <title>VirtueMart3 Documentation</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/bootstrap.css" media="screen">
   <link rel="stylesheet" href="css/responsive.css" media="screen">
@@ -17,7 +17,7 @@
   <script src="js/jquery.flexslider.js"></script>
   <script src="js/bootstrap-affix.js"></script>
   <script src="js/jquery.prettyPhoto.js"></script> 
-  <script src="js/scripts.js"></script>
+  <script src="js/script.js"></script>
 
     <!--[if lt IE 8]>
   		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
@@ -36,8 +36,9 @@
   <div class="row">
   <article class="span4"><a class="brand" href="/help/" target="_blank"></a></article>
  <article class="span6">
- <h1>VirtueMart2 Documentation</h1>
+ <h1>VirtueMart 3 Documentation</h1>
   </article> 
+
   <article class="span2"> 
     <div class="languages pull-right">
       <!-- <span class="lang_label">Language: </span> -->
@@ -49,7 +50,21 @@
         <li><a href="index_ru.html"><span>Русский </span><img src="img/flags/ru.png" height="14" width="22" alt="ru"></a></li>
       </ul> -->
     </div>
-  </article>   
+  </article>  
+  <article class="span2">  
+       <div id="languages" class="select-menu pull-right">
+        <div class="select-menu_icon"><b>En</b><i class="icon-angle-down"></i></div>
+        <ul class="select-menu_list">
+        </ul>
+      </div>
+      <div id="versions" class="select-menu pull-right">
+        <div class="select-menu_icon"><b>v1-1</b><i class="icon-angle-down"></i></div>
+        <ul class="select-menu_list">
+          <li class="active"><a href="/help/quick-start-guide/virtuemart-templates/v1-1/index_en.html"><span>v1-1</span></a></li>
+          <li><a href="/help/quick-start-guide/virtuemart-templates/v1-0/index_en.html"><span>v1-0</span></a></li>
+        </ul>
+      </div>
+    </article> 
   </div>    
   </div>
 </header>
@@ -92,8 +107,9 @@
                            <ul class="list">          
                             <li><a href="#complete_install">Complete Installation</a></li>
                             <li><a href="#template-installation">Template Installation</a></li>
-							 <li><a href="#Virtuemart-installation">Virtuemart Installation</a></li>
+							              <li><a href="#Virtuemart-installation">Virtuemart Installation</a></li>
                             <li><a href="#sample-data-installation">Sample Data Installation</a></li>
+                            <li><a href="#modules-installation">Modules installation</a></li>
                            </ul> 
                        </dd>
                      </dl> 
@@ -103,6 +119,24 @@
                        <dt><a href="#modules_config" class="icon-cog">Configuring Modules </a></dt>
                      </dl> 
                   </li> 
+                  <li class="nav-item item5">
+                    <dl class="slide-down">
+                      <dt><a href="#extensions" class="icon-fullscreen">Extensions</a><i class="icon-sample"></i></dt>
+                      <dd>
+                        <ul class="list">
+                          <li><a href="#articles-newsflash">Articles Newsflash (Advanced)</a></li>
+                          <li><a href="#image_swoop">Image Swoop (Camera Slideshow)</a></li>
+                          <li><a href="#olark">TM Olark live chat</a></li>
+                          <li><a href="#cookies">Joomla cookies directive plugin</a></li>
+                          <li><a href="#acymailing">Acymailing</a></li>
+                          <li><a href="#facebook_feed">SW Facebook Display</a></li>
+                          <li><a href="#pinterest_feed">SW Pinterest Display</a></li>
+                          <li><a href="#twitter_feed">SW Twitter Display</a></li>
+                          <li><a href="#instagram_feed">TM Instagram</a></li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </li>                  
                   <li class="nav-item item8">
                     <dl class="slide-down">
                        <dt><a href="#addendum" class="icon-question-sign">Addendum </a></dt>
@@ -122,76 +156,77 @@
 <!-- block-started
 ================================================== -->
 <section class="block-started"  id="introduction">
-  <h2><i class="icon-info-sign"></i> Introduction <small><i>What can be found in this package and what it can be used for</i></small></h2>
-  <p>Thank you for purchasing the VirtueMart template. This documentation consists of several parts and shows you the entire process of how to setup and administer a VirtueMart/Joomla Web site from scratch. We did our best to make this manual as clear and easy to follow as possible. </p>
+  <h2 class="item1"><i class="icon-info-sign"></i> Introduction <small><i>What can be found in this package and what it can be used for</i></small></h2>
+  <p>Thank you for purchasing a Joomla template. This documentation consists of several parts and shows you the entire process of how to set up and administer a Joomla Web site from scratch. We did our best to make this manual as clear and easy to follow as possible. </p>
   
   <div id="joomla_cms_desc">
     <h4>What is Joomla CMS?</h4>
-    <p>Joomla CMS is an open source solution for building rich content Web sites. It enables you to build Web sites and powerful on-line applications and requires almost no technical skills or knowledge to manage. Many aspects, including its ease-of-use and extensibility, have made Joomla the most popular Web site software available. <a href="http://www.joomla.org/about-joomla.html" target="_blank">Learn More</a></p>
+    <p>Joomla CMS is an open source solution for building rich content Web sites. It enables you to build Web sites and powerful on-line applications and requires almost no technical skills or knowledge to manage. Many aspects, including its ease of use and extensibility, have made Joomla the most popular Web site software available. <a href="http://www.joomla.org/about-joomla.html" target="_blank">Learn More</a></p>
   </div>
 
   <div id="joomla_template_desc">
     <h4>What is a Joomla template?</h4>
-    <p>Joomla template is a skin for your Joomla CMS platform. In other words, you can easily change your Joomla Web site appearance by installing a new template in a few easy steps. In all it's simplicity, the Joomla template is provided with all necessary source files, and you are free to edit or extend it the way you need.</p>
+    <p>A Joomla template is a skin for your Joomla CMS platform. In other words, you can easily change your Joomla Web site appearance installing a new template in a few easy steps. With all its simplicity a Joomla template is provided with all the necessary source files and you are free to edit or extend it the way you need.</p>
   </div>
-  
-  <div id="vm_com_desc">
-    <h4>What is VirtueMart2.0? </h4>
+
+   <div id="vm_com_desc">
+    <h4>What is VirtueMart 3.0? </h4>
     <p>VirtueMart is an Open Source E-Commerce solution (a component or a plug-in) for the Joomla! Content Management System.</p> <p>It can be run as a Shopping Cart or in a Catalog mode. You need to install Joomla! first (as the "Framework") and then install & configure VirtueMart.<a href="http://virtuemart.net/features/what-is-virtuemart" target="_blank">Learn More</a></p>
   </div>
 
   <div id="file_structure">
-    <h4>File structure</h4>
-    <p>The template package you have downloaded consists of several folders. Let's see what each folder contains :</p>
+    <h4>Files structure</h4>
+    <p>The template package you have downloaded consists of several folders. Let's see what each folder contains:</p>
     <ul class="files_structure">
-      <li class="folder"><i class="icon-folder-close"></i> <b>Documentation</b><small class="muted"> - contains documentation files</small>
+      <li class="folder"><i class="icon-folder-close"></i> <b>Documentation</b><small class="muted"> - contains documentation files.</small>
         <ul>
-          <li class="file"><i class="icon-file"></i> index_en.html<small class="muted"> - main documentation file. You are right here :)</small></li>
+          <li class="file"><i class="icon-file"></i> documentation.html<small class="muted"> - the main documentation file. You are right here :)</small></li>
         </ul>
       </li>
-      <li class="folder"><i class="icon-folder-close"></i> <b>joomla</b><small class="muted"> - contains Joomla theme files</small>
+      <li class="folder"><i class="icon-folder-close"></i> <b>Joomla</b><small class="muted"> - contains the Joomla theme archive, quick install package and unzip script file. </small>
         <ul>
-          <li class="file"><i class="icon-file"></i> theme###.zip<small class="muted"> - main theme archive. Contains all theme files. Should be installed through Joomla extension manager</small></li>
-          <li class="file"><i class="icon-file"></i> fullpackage.zip<small class="muted"> - contains complete Joomla installation package with the engine files, the theme and the sample (live demo) content</small></li>
-          <li class="file"><i class="icon-file"></i> unzip.php<small class="muted"> - file used to extract files from the fullpackage.zip when uploaded to the hosting server</small></li>
+          <li class="file"><i class="icon-file"></i> theme###.zip<small class="muted"> - the theme archive. Contains all the theme files. Should be <a href="#template-installation">installed through Joomla extension manager</a>.</small></li>
+          <li class="file"><i class="icon-file"></i> fullpackage.zip<small class="muted"> - contains the <a href="#complete_install">complete Joomla installation package</a> with engine files, theme and sample content (database dump, sample images).</small></li>
+          <li class="file"><i class="icon-file"></i> unzip.php<small class="muted"> - the file used to extract files from the fullpackage.zip when uploaded to the hosting server.</small></li>
         </ul>
       </li>
-      <li class="folder"><b>screenshots</b><small class="muted"> - contains template screenshots. Not for production</small></li>
-      <li class="folder"><b>sources</b><small class="muted"> - contains the template source files</small>
+      <li class="folder"><b>Screenshots</b><small class="muted"> - contains the template screenshots.</small></li>
+      <li class="folder"><b>Sources</b><small class="muted"> - contains the template source files.</small>
         <ul>
-          <li class="folder"><i class="icon-folder-close"></i> psd<small class="muted"> - template Adobe Photoshop source files (.psd)</small></li>
-          <li class="folder"><i class="icon-folder-close"></i> to_the_root_folder<small class="muted"> - contains the files and directories to be uploaded to the root directory of your Joomla installation (for manual installation only)</small></li>
-          <li class="file"><i class="icon-file"></i> dump.sql<small class="muted"> - database backup file. Contains the  sample content of your theme </small></li>
-          <li class="file"><i class="icon-file"></i> pkg_bundle.zip<small class="muted"> - contains additional extensions provided with the theme</small></li>
-		  <li class="file"><i class="icon-file"></i> additional files needed for manual installation of your theme <small class="muted"> - mod_virtuemart_cart_tm.zip, mod_virtuemart_product.zip,plg_system_vm2_cart_j25.zip,The Company Name.html</small></li>
+          <li class="folder"><i class="icon-folder-close"></i> psd<small class="muted"> - the template Adobe Photoshop source files (.psd).</small></li>
+          <li class="folder"><i class="icon-folder-close"></i> to_the_root_folder<small class="muted"> - contains the sample content files used to make your website appear as the template live demo. This folder content should be uploaded to your Joomla root directory. </small></li>
+          <li class="file"><i class="icon-file"></i> dump.sql<small class="muted"> - the database dump file. Contains the theme sample content. </small></li>
+          <li class="file"><i class="icon-file"></i> pkg_bundle.zip<small class="muted"> - contains additional extensions provided with the theme.</small></li>
         </ul>
       </li>
+      <li class="file"><i class="icon-file"></i> fonts_info.txt<small class="muted"> - contains links where the template custom fonts can be downloaded.</small></li>
+      <li class="file"><i class="icon-file"></i> info.txt<small class="muted"> - contains instructions on how to extract source files.</small></li>
     </ul>
   </div>
 </section>
 
 <section class="block-templates" id="prepare">  
-  <h2><i class="icon-check"></i> Prepare <small><i>What do you need to make this work?</i></small></h2>
-  <p>Before you proceed to setting up your VirtueMart/Joomla Web site, make sure to complete the following preparation steps:</p>
+  <h2 class="item2"><i class="icon-check"></i> Prepare <small><i>What do you need to make this work</i></small></h2>
+  <p>Before you proceed to setting up your Joomla Web site please make sure you are fully prepared. Please complete the following preparation steps:</p>
 
   <div id="software">
     <h4>Editing software</h4>
-    <p>To feel comfortable working with Virtuemart2 for Joomla template we recommend you to download all applications required. You can see the list of required software on the template preview page. <br>The requirements may vary for different templates so we'll tell you here what is needed in general:</p>
+    <p>To feel comfortable working with the Joomla template we recommend downloading all the applications required. You can see the list of required software at the template live demo page. <br>The requirements may vary for different templates, so we'll tell you here what is needed in general:</p>
 
     <ol>
-      <li>First of all, you need the right applications to extract the password protected sources_#########.zip archive. You should use WinZip 9+ (Windows) and Stuffit Expander 10+ (Mac).</li>
-      <li>You may also need Adobe Photoshop application. It is used to edit the .PSD source files and it is necessary if you want to edit the template design graphics and images.</li>
-      <li>To edit the template source code files, you'll need a code editor like Adobe Dreamweaver, Notepad++, Sublime Text etc.</li>
-      <li>To upload files to the hosting server, you may need an FTP Manager like Total Commander, FileZilla, CuteFTP etc.</li>
+      <li>First of all, you need the right applications to extract the password protected sources_#########.zip archive. You can use WinZip 9+ (Windows) and Stuffit Expander 10+ (Mac).</li>
+      <li>You may also need the Adobe Photoshop application. It is used to edit .PSD source files and it is necessary if you want to edit template design graphics and images.</li>
+      <li>To edit template source code files you need some code editor like Adobe Dreamweaver, Notepad++, Sublime Text etc.</li>
+      <li>To upload files to the hosting server you may need an FTP Manager like Total Commander, FileZilla, CuteFTP etc.</li>
     </ol>
   </div>
 
   <div id="hosting">
     <h4>Hosting</h4>
-    <p>As Joomla CMS is a PHP/MySQL based application, you need to prepare a hosting environment to run Joomla on.</p>
-    <p>If you have a live hosting, please make sure it matches <a href="http://www.joomla.org/technical-requirements.html" target="_blank">the Joomla software requirements</a> and is ready to be used for Joomla websites.</p>
-    <p>Otherwise you can run Joomla locally on your computer using the local server. To create a local hosting server, please use the localhost applications like <b>WAMP</b>, <b>AppServ</b>, <b>MAMP</b> etc. Any of those can be easily installed as any other program and used for running Joomla. </p>
-    <p>Please, check the tutorials below on how to configure the local development environment:</p>
+    <p>As Joomla CMS is a PHP/MySQL based application, you need to prepare a hosting environment to run Joomla.</p>
+    <p>If you have live hosting, please make sure it matches <a href="http://www.joomla.org/technical-requirements.html" target="_blank">Joomla software requirements</a> and is ready to be used for Joomla websites.</p>
+    <p>Otherwise, you can run Joomla locally on your computer using the local server. To create a local hosting server please use the localhost applications such as <b>WAMP</b>, <b>AppServ</b>, <b>MAMP</b> etc. Any of those can be easily installed as any other program and used to run Joomla. </p>
+    <p>Please check the tutorials below on how to configure the local development environment:</p>
     <ul class="unstyled">
       <li><i class="icon-film"> </i><a href="/help/how-to-install-appserv-web-development-environment.html" target="_blank">How to install AppServ web development environment</a></li>
       <li><i class="icon-film"> </i><a href="/help/how-to-install-wamp-web-development-environment.html" target="_blank">How to install WAMP web development environment</a></li>
@@ -201,19 +236,19 @@
 </section>
 
 <section class="block-templates" id="getting_started">  
-  <h2 href="bla"><i class="icon-play"></i> Getting Started <small><i>What to click to make this work?</i></small></h2>
+  <h2 class="item3"><i class="icon-play"></i> Getting Started <small><i>What to click to make this work</i></small></h2>
 
   <div class="row-fluid">
     <div class="span6 text-center img-paraloid">
       <h3><a href="#complete_install" class="scrollTo">Complete Installation</a></h3>
-      <p>I don't have a Joomla website and I want to install it from scratch. </p>
-      <p>Using this method, you'll have the Joomla CMS engine, Joomla template, Virtuemart2, sample content, and all required extensions installed.</p>
+      <p>"I don't have a Joomla website and I want to install it from scratch." </p>
+      <p>Using this method you'll have the Joomla CMS engine, Joomla template, sample content, and all the required extensions installed.</p>
       <p>&nbsp;</p>
     </div>
     <div class="span6 text-center img-paraloid">
       <h3><a href="#template-installation" class="scrollTo">Template Installation</a></h3>
-      <p>I already have a Joomla based Web site and just want to change its appearance by installing the new template.</p>
-      <p>Using this method you'll have the Joomla template and all required extensions installed.</p>
+      <p>"I already have a Joomla based Web site and just want to change its appearance by installing the new template."</p>
+      <p>Using this method you'll have the Joomla template and all the required extensions installed.</p>
       <p>&nbsp;</p>
     </div>
   </div>
@@ -221,23 +256,23 @@
   <!-- Complete Joomla Installation -->
   <div id="complete_install">
   <h3>Complete Installation</h3>
-  <p>The Complete installation method can be used if you want to setup a Joomla website from scratch. We assume that you have completed all <a href="#prepare">preparation steps</a> and have all necessary stuff.</p>
+  <p>The complete installation method can be used if you want to set up a Joomla website from scratch. We assume that you have completed all the <a href="#prepare">preparation steps</a> and have all the necessary stuff.</p>
 
     <!-- Creating database -->
 
   <article id="creating-database">
-    <h4>Creating Database</h4>
-    <p>When you are done uploading the files to the hosting server, you can prepare a new database for your Joomla website. You can create the new database using the database management tool of your hosting control panel (<i>usually PhpMyAdmin</i>).</p>
+    <h4>Creating a Database</h4>
+    <p>When you are done uploading files to the hosting server you can prepare a new database for your Joomla website. You can create the new database using the database management tool from your hosting control panel (<i>usually PhpMyAdmin</i>).</p>
 
     <p>With the phpMyAdmin tool you will be able to create a new database in 3 simple steps: (check the slides below)</p>
 
      <ol class="list">
-      <li>Click the Database button from the top navigation menu to access the database listing</li>
-      <li>Input a database name into the "Create new database" field </li>
-      <li>Click the Create button on the right side</li>
+      <li>Click the Database button from the top navigation menu to access the database listing.</li>
+      <li>Input the database name into the "Create new database" field.</li>
+      <li>Click the Create button on the right side.</li>
     </ol>
 
-    <p>Your database can be seen in the database listing. Click on it's name to get access to the database</p>
+    <p>Your database can be seen in the database listing now. Click on its name to get access to the database.</p>
 
     <p>&nbsp;</p>
 
@@ -246,20 +281,20 @@
         <li>
           <img src="img/database-create-1.jpg" alt="" />
           <div class="flex-caption">
-            <p>1. Click Database button to access to the database listing</p>
+            <p>1. Click the Database button to access the database listing.</p>
           </div>
         </li>                   
         <li>
           <img src="img/database-create-2.jpg" alt="" />
           <div class="flex-caption">
-            <p>2. Input database name <br>
-                        3. Click Create button</p>
+            <p>2. Input the database name. <br>
+                        3. Click the Create button.</p>
           </div>
         </li>
         <li>
           <img src="img/database-create-3.jpg" alt="" />
           <div class="flex-caption">
-            <p>4. Your database can be seen in the database listing. Click on it's name to get access to the database.</p>
+            <p>4. Your database can be seen in the database listing now. Click on its name to get access to the database.</p>
           </div>
         </li> 
       </ul>    
@@ -267,9 +302,9 @@
 
     <p>&nbsp;</p>
                 
-    <p>You can also check a detailed video tutorial on <i class="icon-film"> </i>  <a href="/help/how-to-create-a-database.html" target="_blank">How to create a database</a></p>
+    <p>You can also check the detailed video tutorial on <i class="icon-film"> </i>  <a href="/help/how-to-create-a-database.html" target="_blank">How to create a database</a></p>
 
-    <div class="box-info"><span>If you have any issues with creating a database please contact your hosting provider for help and assistance. </span></div>
+    <div class="box-info"><span>If you have any issues with creating a database, please contact your hosting provider for help and assistance. </span></div>
   </article>
 
   <!-- Uploading files -->
@@ -278,10 +313,9 @@
     <p class="">To start working with Joomla you need to upload files to your hosting server. This can be done using your hosting file manager or some third party FTP manager.</p>
                 
       <ol>
-        <li>Open your template package directory and go to the <strong>'joomla'</strong> directory</li>
-        <li>Select the unzip.php' and <strong>'fullpackage.zip'</strong> files and upload them to your server(
-          <i class="icon-film"> </i> <a href="/help/how-upload-files-server-2.html" target="_blank">How to upload files to server</a>)</li>
-        <li>Type the path to the <strong>'unzip.php'</strong> file on your server (<i class="muted">http://your_domain_name/unzip.php</i>) in your <abbr title="Internet Explorer, Google Chrome, Mozilla Firefox, Opera, Safari etc.">browser</abbr>.</li>
+        <li>Open your template package directory and go to the 'joomla' directory.</li>
+        <li>Select 'unzip.php' and 'fullpackage.zip' files and upload them to your server (<i class="icon-film"></i><a href="/help/how-upload-files-server-2.html" target="_blank">How to upload files to server</a>).</li>
+        <li>Type the path to the 'unzip.php' file on your server (<i class="muted">http://your_domain_name/unzip.php</i>) in your <abbr title="Internet Explorer, Google Chrome, Mozilla Firefox, Opera, Safari etc.">browser</abbr>.</li>
         <li>You should see the following screen:</li>
       </ol>
                 
@@ -289,12 +323,12 @@
       <p class="muted text-center">Img 1. Unzip.php initial screen.</p>
                 
       <ol start="5">
-        <li>In the <strong>'Choose your zip file'</strong> select box,  select the uploaded fullpackage.zip file.</li>
-        <li>In the <strong>'Unzip to'</strong> filed specify the directory where you want to extract the files.</li>
-        <li>Click <strong>'Unzip'</strong> button to proceed.</li>
+        <li>In the 'Choose your zip file' select box please select the uploaded fullpackage.zip file.</li>
+        <li>In the 'Unzip to' field specify the directory where you want to extract the files.</li>
+        <li>Click the 'Unzip' button to proceed.</li>
       </ol>
                 
-      <div class="box-info"><span>Please, make sure to set the correct permissions to the directory you are planning to extract the files to. Permissions should be CHMOD 755 or 777 depending on your server configuration. </span></div>
+      <div class="box-info"><span>Please make sure to set the correct permissions for the directory where you are planning to extract the files. Permissions should be CHMOD 755 or 777 depending on your server configuration. </span></div>
   </article>
 
     
@@ -302,115 +336,121 @@
 
   <article id="joomla-cms-installation">
     <h4>Joomla CMS installation</h4>
-    
-    <p>Open your browser and type path to your Joomla directory in the address bar (<i>e.g. http://your_domain_name/joomla</i>). You should see the initial Joomla CMS installation screen:</p>
-    
-	
-	<p>&nbsp;</p>
-    <h5 id="joomla-install-configuration"><span class="badge">Step 1</span> Choosing Language</h5>    
-    <p>&nbsp;</p> 
-	<p>Choose the  Joomla! installation language</p>
-	  	<figure class="img-polaroid"><img src="img/cms-step-1.jpg" alt=""></figure>
-    <p>&nbsp;</p>
-	
-	<p>&nbsp;</p>
-    <h5 id="joomla-install-configuration"><span class="badge">Step 2</span> Pre-Installation Check</h5>    
-    <p>&nbsp;</p> 
-	<p>Pre-installation check for Joomla! 2.5.14 Stable</p>
-	<p>Recommended settings:</br>These settings are recommended for PHP in order to ensure its full compatibility with Joomla.
-However, Joomla! will still operate if your settings do not quite match the ones recommended. </p>
-	  	<figure class="img-polaroid"><img src="img/cms-step-2.jpg" alt=""></figure>
-    <p>&nbsp;</p>
-	
-	
-	<p>&nbsp;</p>
-    <h5 id="joomla-install-configuration"><span class="badge">Step 3</span> License</h5>    
-    <p>&nbsp;</p> 
-	<p>Read through the license and click to agree to its terms to proceed</p>
-	  	<figure class="img-polaroid"><img src="img/cms-step-3.jpg" alt=""></figure>
-    <p>&nbsp;</p>
-	
-	<p>&nbsp;</p>
-    <h5 id="joomla-install-configuration"><span class="badge">Step 4</span> Database Configuration</h5>    
-    <p>&nbsp;</p> 
-	<p>Joomla! requires a MySQL database to store the website data, so in order   to proceed, you will need to create it by using your  hosting control panel. You can learn more about <a href="http://info.template-help.com/help/how-create-database.html" target="_blank">creating databases by checking our detailed video tutorial. </a>You can always contact your hosting provider directly if there are any issues. </p>
-	<p>Once the database is created, you should have all the necessary information to fill in the fields on this page like Host Name, Database Username and Password.</p>
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<figure class="img-polaroid"><img src="img/cms-step-4.jpg" alt=""></figure>
-    <p>&nbsp;</p>
-	
-	    <p>&nbsp;</p>
-		<h5 id="joomla-install-configuration"><span class="badge">Step 5</span>  FTP Configuration</h5>    
-		<p>&nbsp;</p> 
-		<p>You may just skip this step by pressing <strong>&quot;Next&quot;</strong>: </p>
-       <figure class="img-polaroid"><img src="img/cms-step-5.jpg" alt=""></figure>       
 
-	
-    <h5 id="joomla-install-configuration"><span class="badge">Step 6</span> Main Configuration</h5>    
+    <p> Please make sure you have completed all the <a href="#prepare">preparation steps</a> and have all the necessary stuff.</p>    
+    <p>Open your browser and type the path to your Joomla directory in the address bar (<i>e.g. http://your_domain_name/joomla</i>). You should see the initial Joomla CMS installation screen:</p>
+    
+    <p>&nbsp;</p>
+    <h5 id="joomla-install-configuration"><span class="badge">Step 1</span> Configuration</h5>    
     <p>&nbsp;</p> 
-      <p>It's important to fill in all the fields on this page and remember the username and password, since you will need them for logging into your Joomla! admin panel. Do not forget to import the Joomla! sample data.</p>
-<div class="box-error"><span>"Admin Email", "Admin Username" and "Admin Password" are required to access your Joomla Web site <abbr title="Joomla Administration Panel that is used to work with Web site content">backend</abbr>. Keep them safe. </span></div>
-
-      <figure class="img-polaroid"><img src="img/sampledata.png" alt=""></figure>
               
-      <p>When you are done, click the
-        <button class="btn btn-primary">Next</button> button in the top-right corner to proceed. </p>
+      <p> Using the "Select Language" box choose the Joomla installation language.</p>
+        <p><span class="label label-info">Please note: </span>The "Select Language" box allows you to choose the language of the Joomla installation process only. It won't affect your Web site language.</p>
+              
+      <p>You need to fill in all form fields in the "Main Configuration" area. Required fields are marked with the asterisk * symbol.</p>
+      <p>Fill the "Admin Email", "Admin Username" and "Admin Password" fields in the right column to create a new Joomla website user with administrative rights.</p>
+              
+      <div class="box-error"><span>"Admin Email", "Admin Username" and "Admin Password" are required to access your Joomla Web site <abbr title="Joomla Administration Panel that is used to work with Web site content">backend</abbr>. Keep them safe. </span></div>
+
+      <figure class="img-polaroid"><img src="img/cms-install-1.jpg" alt=""></figure>
+      <p class="muted text-center">Img 2. Joomla CMS installation. Step 1. Configuration</p>
+              
+      <p>When you are done click the <button class="btn btn-primary">Next</button> button in the top-right corner to proceed. </p>
            
 
     <p>&nbsp;</p>       
-    <h5 id="joomla-install-database"><span class="badge">Step 7</span> Finish</h5>
+    <h5 id="joomla-install-database"><span class="badge">Step 2</span> Database</h5>
     <p>&nbsp;</p>
-	
-    <p>Congratulations! Joomla! is now installed.</p>
-	   <p>In order to log into the administration panel, you first need to remove the <strong>&quot;installation&quot;</strong> folder on your FTP server. Just click <strong>&quot;Remove Installation Folder&quot;</strong> on this page to remove it. In the top right corner you can find buttons to access the frontend and the backend of your site.</p>
- 		<figure class="img-polaroid"><img src="img/cms-step-7.jpg" alt=""></figure>          
-	
+              
+      <p>At the second step of the Joomla CMS installation you need to input your database details. If you are not sure, please contact your hosting provider to get the correct details.</p>
+              
+      <p>As you are installing Joomla from scratch you only need to input "Host Name," "Username," "Database Name" and "Password". You can usually leave other options default. However, there can be some differences depending on your hosting provider. </p>
+
+      <figure class="img-polaroid"><img src="img/cms-install-2.jpg" alt=""></figure>
+      <p class="muted text-center">Img 3. Joomla CMS installation. Step 2. Database</p>
+              
+      <p>When you are done click the <button class="btn btn-primary">Install</button> button in the top-right corner to proceed. </p>
+              
+
+    <p>&nbsp;</p>          
+    <h5 id="joomla-install-overview"><span class="badge">Step 3</span> Overview</h5>
+    <p>&nbsp;</p>     
+              
+      <p>You are almost done installing Joomla CMS. At the Overview step you need to select whether you want to install Joomla Sample data. </p>
+      <div class="box-info"><span>Please note: Sample Data is required if you want to make your Joomla Web site appear as the template live demo with all the images, sample text and modules configured. To make your template appear as in the live demo page select the sample data package named "sample_theme###" where ### is the number of your theme.</span> </div>
+        
+      <p>Select the Sample data package you want to install or select "None" if you want to set up a pure Joomla website without any content.</p>
+
+      <figure class="img-polaroid"><img src="img/cms-install-3-1.jpg" alt=""></figure>
+      <p class="muted text-center">Img 4-1. Joomla CMS installation. Step 3. Overview. Sample data import</p>
+
+      <p>Below you can check if the database configuration and administration panel access details are valid and send them to your email address if necessary.</p>
+
+      <figure class="img-polaroid"><img src="img/cms-install-3-2.jpg" alt=""></figure>
+      <p class="muted text-center">Img 4-1. Joomla CMS installation. Step 3. Overview. Configuration</p>
+              
+      <p>You can also check your installation settings and see if your hosting server matches the Joomla requirements. If you have any red notification boxes in the "Recommended settings" section, please contact your hosting provider for further assistance.</p>
+
+      <figure class="img-polaroid"><img src="img/cms-install-3-3.jpg" alt=""></figure>
+      <p class="muted text-center">Img 4. Joomla CMS installation. Step 3. Server settings</p>
+              
+      <p>When you are done click the <button class="btn btn-primary">Install</button> button in the top-right corner to proceed. </p>
+
+
+    <p>&nbsp;</p>          
+    <h5 id="joomla-install-complete"><span class="badge">Step 4</span> Installation Complete</h5>
+    <p>&nbsp;</p>
+              
+    <p>Congratulations! You have successfully installed Joomla CMS.</p>
+              
+    <figure class="img-polaroid"><img src="img/cms-install-4.jpg" alt=""></figure>
+    <p class="muted text-center">Img 5. Joomla CMS installation. Step 4. Installation Complete</p>
+              
+    <p>For security reasons please delete the "Installation" directory from your Joomla root directory.</p>
+
+    <p><span class="label label-success">Tip:</span> You can view the video tutorial on <i class="icon-film"> </i> <a href="/help/joomla-3-0-how-to-install-joomla-engine.html" target="_blank">How to install Joomla 3 engine.</a></p>
+
+    <div class="box-info"><span>Please note: if you finished the "Complete Installation" section, you can skip the next "Template Installation", "Sample Data Installation" and "Extensions Installation" sections as you have all these elements already installed.</span></div>
+  </article>
     
-      <p>Now you are ready to proceed to configuring your Joomla CMS based website. Click the "<b>Site</b>" button to view your website or the "<b>Administrator</b>" button to view the Joomla backend.</p>
-	  <div class="box-error">
-		<span>The last but not least important step is to update the database:</span>
-	  </div>
-	
-	<ol>
-		<li>Go to <strong>Components->VirtueMart->Configuration->Configuration-></strong>, scroll down to the <strong>&quot;Advanced Settings&quot;</strong> section - mark the <strong>&quot;Enable database Update tools</strong>&quot; option and click <strong>&quot;Save & Close</strong>&quot; button in the top right corner.</li>
-		<li>Now go to <strong>Tools->Tools &amp; Migration</strong> menu - click the <strong>"Install tables or if necessary update them"</strong> button.</li>
-	</ol>
-	<p>This was the &quot;quick start&quot; installation. After installing the fullpackage and activating the sample  data in its  configuration, you will get a completely installed VirtueMart2 template you purchased.</p>
-	<p>Even if you wish to perform the manual installation of Joomla!, the steps  needed for this are identical to the ones required for the fullpackage installation. After that the next step will be installing and activating the Joomla! template you purchased.</p>
+      <p>Now you are ready to proceed to configuring your Joomla CMS based Web site. Click the "<b>Site</b>" button to view your Web site or "<b>Administrator</b>" to view Joomla backend.</p>
+
+      <div class="box-error">
+    <span>The last but not least important step is to update the database:</span>
   </div>
   
+  <ol>
+    <li>Go to <strong>Components->VirtueMart->Configuration->Configuration-></strong>, scroll down to the <strong>&quot;Advanced Settings&quot;</strong> section - mark the <strong>&quot;Enable database Update tools</strong>&quot; option and click <strong>&quot;Save & Close</strong>&quot; button in the top right corner.</li>
+    <li>Now go to <strong>Tools->Tools &amp; Migration</strong> menu - click the <strong>"Install tables or if necessary update them"</strong> button.</li>
+  </ol>
+  <p>This was the &quot;quick start&quot; installation. After installing the fullpackage and activating the sample  data in its  configuration, you will get a completely installed VirtueMart2 template you purchased.</p>
+  <p>Even if you wish to perform the manual installation of Joomla!, the steps  needed for this are identical to the ones required for the fullpackage installation. After that the next step will be installing and activating the Joomla! template you purchased.</p>
+
+  </div>
   <div class="block-templates" id="template-installation">
     <h3>Template Installation</h3>
-    <p>This installation method can be used if you already have a Joomla website and just want to change the website appearance by installing the Joomla template.</p>
+    <p>This installation method can be used if you already have a Joomla website and just want to change the website appearance by installing a Joomla template.</p>
     
     <!-- Extensions manager -->         
-    <p><span class="badge">Step 1</span> Open your Joomla administration panel and go to <b>"Extensions > Extensions Manager"</b>  in the top menu.</p>          
+    <p><span class="badge">Step 1.</span> Open Joomla administration panel and  go to the <b>"Extensions > Extensions Manager"</b> screen using the top menu.</p>          
     <figure class="img-polaroid"><img src="img/template-install-1.jpg" alt=""></figure>
-    <p class="muted text-center">Joomla template installation. Step 1. Extensions Manager</p>
+    <p class="muted text-center">Img 6. Joomla template installation. Step 1. Extensions Manager</p>
 
     <!-- Upload theme zip -->         
-    <p><span class="badge">Step 2</span> Using the  <strong>"Browse"</strong> button navigate to the "<b>theme###.zip</b>" file in the <strong>"joomla"</strong> directory of your template package</p>         
+    <p><span class="badge">Step 2.</span> Using the Package File "Choose File" button browse for the "<b>theme###.zip</b>" file in the "joomla" directory of your template package.</p>         
     <figure class="img-polaroid"><img src="img/template-install-2.jpg" alt=""></figure>
-    <p class="muted text-center">Joomla template installation. Step 2. Uploading the theme archive </p>          
-    <p>Click 
-      the 
-      <button class="btn btn-primary">Upload & Install</button> 
-      button to install the Joomla template.</p>
+    <p class="muted text-center">Img 7. Joomla template installation. Step 2. Theme archive upload</p>          
+    <p>Click the <button class="btn btn-primary">Upload & Install</button> button to install the Joomla template.</p>
 
     <!-- Activate template -->          
-    <p><span class="badge">Step 3</span> When uploading is complete, you will need to activate the template. In the top menu select "<b>Extensions > Template Manager</b>"</p>         
+    <p><span class="badge">Step 3.</span> When uploading is complete you need to activate the installed template. From the top menu select "<b>Extensions > Template Manager</b>."</p>         
     <figure class="img-polaroid"><img src="img/template-install-3.jpg" alt=""></figure>
-    <p class="muted text-center">Joomla template installation. Step 3. Template activation</p>         
+    <p class="muted text-center">Img 8. Joomla template installation. Step 3. Template activation</p>         
     <p>Select your newly installed template and click the "<b>Make Default</b>" button in the top left corner. Now you can view your website to see the changes.</p>
   </div>
 
-
-  <!-- Virtuemart installation -->
-
-
 <div class="block-templates" id="Virtuemart-installation">
-    <h3 id="virtuemart_install">Virtuemart2 installation (last version)</h3>
+    <h3 id="virtuemart_install">Virtuemart3 installation (last version)</h3>
              
 <p>It is an assumption that you have already installed Joomla 2.5.14 Feel free to check our detailed video and text instructions on <a href="/help/joomla-1-7-how-to-install-engine.html" target="_blank">how to install Joomla content management system</a></p>
               <p>1. First you need to download the latest package of <a title="Vrituemart 2.0.0 download" href="http://virtuemart.net/downloads" rel="nofollow">Virtuemart 2.x.x here</a>. You will need to download the file called com_virtuemart.2.0.xx_extract_first.zip.(last version)</p>
@@ -421,17 +461,17 @@ However, Joomla! will still operate if your settings do not quite match the ones
               </ul>
               <p>3. Now log into the Joomla admin panel with your username and password.</p>
               <p>4.Go to <strong>Extensions </strong>&gt; <strong>Extension Manager</strong>.</p>
-              <p>5. Click the <strong>Browse </strong>button and select the  <strong>com_virtuemart.2.0.xx.zip(last version)</strong> file. Then click the <strong>Upload &amp; Install </strong>button.</p>
+              <p>5. Click the <strong>Browse </strong>button and select the  <strong>com_virtuemart.3.0.xx.zip(last version)</strong> file. Then click the <strong>Upload &amp; Install </strong>button.</p>
               <p><img alt="install-virtue-mart" src="img/install-virtue-mart.png" height="400" width="718"></p>
               <p>You should see the message "<strong>The installation was successful</strong>".</p>
-              <p>6. Install the other file called <strong>com_virtuemart_ext_aio.2.0.xx.zip(last version)</strong>. Click the <strong>Browse </strong>button and select the  <strong>com_virtuemart_ext_aio.2.0.xx.zip(last version)</strong> file. Then click the <strong>Upload &amp; Install </strong>button. Once the installation is complete, you should see the Virtuemart link under the <strong>Components </strong>menu.</p>
+              <p>6. Install the other file called <strong>com_virtuemart_ext_aio.3.0.xx.zip(last version)</strong>. Click the <strong>Browse </strong>button and select the  <strong>com_virtuemart_ext_aio.3.0.xx.zip(last version)</strong> file. Then click the <strong>Upload &amp; Install </strong>button. Once the installation is complete, you should see the Virtuemart link under the <strong>Components </strong>menu.</p>
               <p><img alt="install-virtuemart-2" src="img/install-virtuemart-2.png" height="290" width="148"></p>
-              <p>7. Check if the following plugins and modules have been installed.Go to the top menu <strong>Extensions </strong>&gt; <strong>Module Manager</strong>. In the filter box type in <strong>vm</strong> and click  <strong>Search</strong>. You should see the following Virtuemart modules:</p>
+              <p>7. Check if the following plugins and modules have been installed. Go to the top menu <strong>Extensions </strong>&gt; <strong>Module Manager</strong>. In the filter box type in <strong>vm</strong> and click  <strong>Search</strong>. You should see the following Virtuemart modules:</p>
 <p><img alt="install-virtuemart-3" src="img/install-virtuemart-3.png" height="360" width="755"></p>
               <p>Do the same for the plugin. Go to the top menu <strong>Extensions </strong>&gt; <strong>Plug-in Manager</strong>. In the filter box type in <strong>vm</strong> and click  <strong>Search</strong>. You should then see the following Virtuemart plugins:</p>
               <p><img alt="install-virtuemart-4" src="img/install-virtuemart-4.png" height="416" width="763"></p>
               <p>8. Go back to the <strong>Module manager</strong> and enable the modules you would like to use on your website frontend. Here you can 
-                also set their positions on your webpages. Then go to your site frontend and check out the new virtuemart module.</p>
+                also set their positions on your webpages. Then go to your site frontend and check out the new VirtueMart module.</p>
               <p>9. Next you will need to create a new menu link so the site users could navigate to your shop. To do so, click on <strong>Menus </strong>and select the desired menu you would like to point to the Store page. For example, you can add a link to the top menu, side menu and etc.</p>
               <p>In this example we will use the top menu. Go to<strong> Menus </strong>&gt; <strong>Top</strong>.</p>
               <p><img alt="install-virtuemart-5" src="img/install-virtuemart-5.png" height="117" width="148"></p>
@@ -442,32 +482,31 @@ However, Joomla! will still operate if your settings do not quite match the ones
 <p><img alt="install-virtuemart-7" src="img/install-virtuemart-7.png" height="481" width="626"></p>
               <p>12. Give your link a<strong> Menu Title</strong>, and click the<strong> Save and Close</strong> button at the top.</p>
   </div>
-
   <!-- Sample data installation -->
   <div class="block-templates" id="sample-data-installation">
   <h3>Sample Data Installation</h3>
-  <p>Sample data is used to make your VirtueMart/Joomla website look like the template preview page. It contains sample articles, images, modules settings, website settings etc. If you are not planning to use the sample images or any other sample content, just skip this step. </p>
-  <p>To install the sample data, you need to complete two simple steps.</p>
+  <p>Sample data is used to make your Joomla website appear as the template live demo page. It contains sample articles, images, modules settings, website settings etc. If you are not planning to use sample images or any other sample content, please skip this step. </p>
+  <p>To install sample data you need to complete two simple steps.</p>
   
   <h4><b>Step 1.</b> Upload sample images.</h4>
-  <p>To upload the sample images, please open your template package directory and go to the <strong>"sources"</strong> folder. There you should see the <strong>"to_the_root_directory"</strong> directory. It contains the files that should be uploaded to your Joomla installation root. Please, use the file manager to upload the files to your server.</p>
+  <p>To upload sample images please open your template package directory and go to the "sources" folder. There you should see the "to_the_root_directory" directory. It contains files that should be placed to your Joomla installation root. Please use the file manager to upload files to your server.</p>
   
   <h4><b>Step 2.</b> Import SQL file.</h4>
-  <p>The final and the most important step of the sample data installation is to import the SQL file. The SQL file is the backup of the sample database, all Joomla website data is stored there. The SQL file can be imported by using your database management tool (phpMyAdmin). The template SQL file ("dump.sql") is located in the <strong>"sources"</strong> directory of the template package. </p>
+  <p>The final and most important step of the sample data installation is the import of the SQL file. The SQL file is a dump of the sample database, all Joomla website data is stored there. The SQL file can be imported using your database management tool (phpMyAdmin). The template SQL file - "dump.sql" is located in the "sources" directory of the template package. </p>
     <p>&nbsp;</p>
 
-  <div class="box-info"><span>Please, <b>DO NOT</b> import the SQL file, if you have a live website, as it will completely replace your website database and all your data will be lost.</span> </div>
-  <div class="box-error"><span>Beware: before importing the SQL file, please make sure your database table prefix matches the table prefix in the SQL file.</span> </div>
-  <p>You can check what your table prefix is in the database through the database management tool. Check the table names. The prefix is a set of symbols before the table name. (<i>e.g. table "jos_assets" prefix is "jos_"</i>). You can also find the database prefix in the <strong>"configuration.php"</strong> file in your Joomla root directory. Search for line 19: <code>public $dbprefix = 'jos_';</code> (<i>where the prefix is "jos_"</i>)</p>
-  <p>If the table prefixes don't match open "dump.sql" file,  in a code editor by using the Search &amp; Replace tool (CTRL+F or CTRL+H hotkeys) you will need to replace the "jos_" table prefix (<i>used in the SQL file</i>) with the one that matches your database. You can check a detailed video tutorial on <a href="/help/joomla-how-to-change-database-tables-prefix-in-sql-file.html" target="_blank">how to change the database prefix in the SQL file</a>.</p>
-  <p>Now you can import that SQL file into your database. <br>
-  To import sample data into your database, please perform these simple steps: (check the slides below):</p>
+  <div class="box-info"><span>Please <b>DO NOT</b> import the SQL file if you have a live website as it will totally replace your website database and all your data will be lost.</span> </div>
+  <div class="box-error"><span>Beware: before importing the SQL file please make sure your database table prefix matches the table prefix in the SQL file.</span> </div>
+  <p>You can check the table prefix directly in the database through the database management tool. Check for the tables names. The prefix is a set of symbols before the table name (<i>e.g. table "jos_assets" prefix is "jos_"</i>). You can also find the database prefix in the "configuration.php" file in your Joomla root directory. Search for line 19: <code>public $dbprefix = 'jos_';</code> (<i>where the prefix is "jos_"</i>).</p>
+  <p>If the table prefixes don't match, open the "dump.sql" file with your code editor and using the Search &amp; Replace tool (CTRL+F or CTRL+H hotkeys) replace the "jos_" table prefix (<i>used in the SQL file</i>) with the one that matches your database. You can check the detailed video tutorial on <a href="/help/joomla-how-to-change-database-tables-prefix-in-sql-file.html" target="_blank">how to change database prefix in SQL file</a>.</p>
+  <p>Now you can import that SQL file to your database. <br>
+  To import sample data to your database please perform these simple steps (check the slides below):</p>
 
   <ol class="list">
-    <li>Select your database from the database list in the left column of the phpMyAdmin tool</li>
-    <li>Click the "Import" button from the top navigation menu</li>
-    <li>Click "Choose file" and browse for the dump.sql file in the "sources" directory of your template package</li>
-    <li>Click "Go"  to start importing the sample data</li>
+    <li>Select your database from the database list in the left column in the phpMyAdmin tool.</li>
+    <li>Click the "Import" button from the top navigation menu.</li>
+    <li>Click "Choose file" and browse for the dump.sql file in the template package "sources" directory.</li>
+    <li>Click the "Go" button to start importing the sample data.</li>
   </ol>
 
       <p>&nbsp;</p>
@@ -477,18 +516,18 @@ However, Joomla! will still operate if your settings do not quite match the ones
         <li>
           <img src="img/sample-install-1.jpg" alt="" />
           <div class="flex-caption">
-           <p> 1. Select your database</p>
+           <p> 1. Select your database.</p>
           </div>
         </li>                   
         <li>
           <img src="img/sample-install-2.jpg" alt="" />
-          <div class="flex-caption"><p>2. Click "Import" button</p></div>
+          <div class="flex-caption"><p>2. Click the "Import" button.</p></div>
         </li>
         <li>
           <img src="img/sample-install-3.jpg" alt="" />
           <div class="flex-caption">
-            <p>3. Click "Choose file" and browse for the dump.sql file in the template package "sources" directory<br>
-                        4. Click "Go" button to start importing sample data</p>
+            <p>3. Click "Choose file" and browse for the dump.sql file in the template package "sources" directory.<br>
+                        4. Click the "Go" button to start importing the sample data.</p>
           </div>
         </li> 
       </ul>    
@@ -496,488 +535,37 @@ However, Joomla! will still operate if your settings do not quite match the ones
 
     <p>&nbsp;</p>
 
-    <p>You can also check a detailed tutorial on <i class="icon-film"> </i><a href="/help/phpmyadmin-how-to-import-sample-data-dump-file.html" target="_blank">how to import the SQL file by using the phpMyAdmin tool</a></p>
+    <p>You can also check the detailed tutorial on <i class="icon-film"> </i><a href="/help/phpmyadmin-how-to-import-sample-data-dump-file.html" target="_blank">how to import SQL file using phpMyAdmin tool.</a></p>
   </div>
 
+  <div class="block-templates" id="modules-installation"> 
+    <h3>Modules installation</h3> 
+    <p>Joomla themes are provided with additional extensions: modules, plugins and components that are used to implement various functionality and features. All the additional extensions can be installed in a couple of clicks using the bundle package provided.</p> 
+    <p>The bundle archive is located in the 'sources' directory of your template package and called 'pkg_bundle.zip'. It can be easily installed, as any other extension or theme, through <b>Joomla admin panel > Extensions manager</b>. </p> 
+    <ol> 
+      <li>Open the Joomla administration panel. From the top menu select '<b>Extensions</b>'. From the dropdown select '<b>Extensions Manager</b>'.</li> 
+      <li>Make sure the 'Install' section is selected in the left column.</li> 
+      <li>Click the 'Browse/Choose file' button and select the 'sources/pkg_bundle.zip' archive.</li> 
+      <li>Click the 'Upload and install' button to install all the modules. </li> 
+    </ol> 
+    <figure class="img-polaroid"><img src="img/extensions_manager.jpg" alt="" /></figure> 
+    <p>In case your theme contains some extensions which have not been included into '<b>pkg_bundle.zip</b>', you need to install each one separately. This can be done exactly as the 'sources/pkg_bundle.zip' installation through the '<b>Extensions Manager</b>' interface.</p> 
+    <p>The file names of extensions archives usually start with '<b>mod_</b>', '<b>com_</b>' or '<b>plg_</b>,' so you will recognize them easily. </p> 
+  </div>
 </section>
 
 
 <section class="block-templates" id="modules_config">
-  <h2><i class="icon-cog"></i> Configuring Modules</h2>
+ <h2 class="item4"><i class="icon-cog"></i> Configuring Modules</h2>
               <p>The template may have some modules that are not included to the default VirtueMart/Joomla! installation and should be installed manually. The procedure is the same as described in step 1 of this document.</p>
               <ol>
-                <li>In your  Joomla! administration panel select "<strong>Extensions</strong> - <strong>Extensions Manager</strong>".</li>
+                <li>In your  Joomla! administration panel select "<strong>Extensions</strong> > <strong>Extensions Manager</strong>".</li>
                 <li>Click the Browse button and select the extension package from the template <strong>"sources"</strong> folder. </li>
                 <li>Click the "<strong>Upload &amp; Install</strong>" button. </li>
-                <li>Go to  "<strong>Extensions - Module manager</strong>". The newly installed module should appear in the modules list.</li>
+                <li>Go to  "<strong>Extensions -> Module manager</strong>". The newly installed module should appear in the modules list.</li>
               </ol>
               <p>Open the module and set the configuration options according to the Modules Configuration table.</p>
                 
-<div id="mod_table">
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>1</b> - Currency:</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_virtuemart_currencies</li>
-				<li><b>Position:</b> user5</li>
-				<li><b>Class Suffix:</b> </li>
-				<li><b>Show Title:</b> yes</li>
-				<li><b>Order:</b> 1</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> All</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>2</b> - Login Form</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_login</li>
-				<li><b>Position:</b> left</li>
-				<li><b>Class Suffix:</b> _login</li>
-				<li><b>Show Title:</b> yes</li>
-				<li><b>Order:</b> 2</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> All</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>3</b> - Manufacturer</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_virtuemart_manufacturer</li>
-				<li><b>Position:</b> new</li>
-				<li><b>Class Suffix:</b> _manufacturers</li>
-				<li><b>Show Title:</b> yes</li>
-				<li><b>Order:</b> 1</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> All</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>4</b> - Footer</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_footer</li>
-				<li><b>Position:</b> footer</li>
-				<li><b>Class Suffix:</b> </li>
-				<li><b>Show Title:</b> no</li>
-				<li><b>Order:</b> 1</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> All</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>5</b> - foot-menu </div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_menu</li>
-				<li><b>Position:</b> user9</li>
-				<li><b>Class Suffix:</b> </li>
-				<li><b>Show Title:</b> no</li>
-				<li><b>Order:</b> 1</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> All</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>6</b> - Follow Us</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_custom</li>
-				<li><b>Position:</b> user9</li>
-				<li><b>Class Suffix:</b> _social</li>
-				<li><b>Show Title:</b> yes</li>
-				<li><b>Order:</b> 1</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> All</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>7</b> - Breadcrumbs Advanced</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_breadcrumbs_advanced</li>
-				<li><b>Position:</b> syndicate</li>
-				<li><b>Class Suffix:</b> _Breadcrumbs</li>
-				<li><b>Show Title:</b> no</li>
-				<li><b>Order:</b> 1</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> Online Store<br />Home<br />Manufacturer Default Layout<br />List Orders<br />User Edit Address<br />Display Vendor contact<br />Category Layout</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>8</b> - Google Map </div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_JGMap</li>
-				<li><b>Position:</b> right</li>
-				<li><b>Class Suffix:</b> _map</li>
-				<li><b>Show Title:</b> yes</li>
-				<li><b>Order:</b> 1</li>				
-
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> Contacts</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>9</b> - The Company Name</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_custom</li>
-				<li><b>Position:</b> left</li>
-				<li><b>Class Suffix:</b> _address</li>
-				<li><b>Show Title:</b> yes</li>
-				<li><b>Order:</b> 6</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> Contacts</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>10</b> - foot-menu  (2)</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_menu</li>
-				<li><b>Position:</b> user9</li>
-				<li><b>Class Suffix:</b> </li>
-				<li><b>Show Title:</b> no</li>
-				<li><b>Order:</b> 2</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> All</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>11</b> - foot-menu  (3)</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_menu</li>
-				<li><b>Position:</b> user9</li>
-				<li><b>Class Suffix:</b> </li>
-				<li><b>Show Title:</b> no</li>
-				<li><b>Order:</b> 3</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> All</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>12</b> - foot-menu  (4)</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_menu</li>
-				<li><b>Position:</b> user9</li>
-				<li><b>Class Suffix:</b> </li>
-				<li><b>Show Title:</b> no</li>
-				<li><b>Order:</b> 4</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> All</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>13</b> - Slideshow CK</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_slideshowck</li>
-				<li><b>Position:</b> user8</li>
-				<li><b>Class Suffix:</b> _slider</li>
-				<li><b>Show Title:</b> no</li>
-				<li><b>Order:</b> 1</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> Home</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>14</b> - YJ Pop Login</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_yj_pop_login</li>
-				<li><b>Position:</b> user10</li>
-				<li><b>Class Suffix:</b> _LoginForm</li>
-				<li><b>Show Title:</b> no</li>
-				<li><b>Order:</b> 1</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> All</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>15</b> - VirtueMart Ajax Search</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_vm_ajax_search</li>
-				<li><b>Position:</b> user4</li>
-				<li><b>Class Suffix:</b> _ajax_search</li>
-				<li><b>Show Title:</b> no</li>
-				<li><b>Order:</b> 1</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> All</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>16</b> - Top_menu</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_superfish_menu</li>
-				<li><b>Position:</b> user3</li>
-				<li><b>Class Suffix:</b> </li>
-				<li><b>Show Title:</b> no</li>
-				<li><b>Order:</b> 1</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> All</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>17</b> - Categories</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_virtuemart_category</li>
-				<li><b>Position:</b> left</li>
-				<li><b>Class Suffix:</b> -categories</li>
-				<li><b>Show Title:</b> yes</li>
-				<li><b>Order:</b> 1</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> About Us<br />Home<br />Online Store<br />Home<br />Delivery<br />FAQs<br />Manufacturer Default Layout<br />List Orders<br />User Edit Address<br />Display Vendor contact<br />Category Layout<br />About joomla!<br />Wrappers<br />Reviews<br />News<br />Create an Account<br />Advanced Search<br />Order History<br />Shipping & Returns</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>18</b> - Categories Top</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_virtuemart_category</li>
-				<li><b>Position:</b> user7</li>
-				<li><b>Class Suffix:</b> -category</li>
-				<li><b>Show Title:</b> no</li>
-				<li><b>Order:</b> 1</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> All</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>19</b> - Shopping Cart</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_virtuemart_cart_tm</li>
-				<li><b>Position:</b> user6</li>
-				<li><b>Class Suffix:</b> }</li>
-				<li><b>Show Title:</b> no</li>
-				<li><b>Order:</b> 1</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> All</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>20</b> - Featured Products</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_virtuemart_product</li>
-				<li><b>Position:</b> user2</li>
-				<li><b>Class Suffix:</b> _new</li>
-				<li><b>Show Title:</b> yes</li>
-				<li><b>Order:</b> 1</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> Home<br />Home</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-
-	<div class='module row-fluid'>
-		<div class='span3'><b>21</b> - Bestsellers</div>
-
-		<div class='span4'>
-			<ul>
-				<li><b>Type:</b> mod_virtuemart_product</li>
-				<li><b>Position:</b> left</li>
-				<li><b>Class Suffix:</b> _best</li>
-				<li><b>Show Title:</b> yes</li>
-				<li><b>Order:</b> 1</li>				
-			</ul>
-		</div>
-		<div class='span5'>
-			<ul>
-				<li><b>Pages:</b> All</li>
-				<li></li>
-				<li><b>Additional info:</b> &nbsp;</li>
-			</ul>
-		</div>
-		<div class='clearfix'></div>
-	</div>
-</div>
 <p>After all the necessary changes are applied, save the values of each module by clicking the "<strong>Save &amp; Close</strong>" button in the upper right corner.</p>
                 <p>You also need to upload the following folders to the root of your Joomla! installation: <br>
                   sources\to_the_root_directory\administrator <br>
@@ -987,10 +575,163 @@ However, Joomla! will still operate if your settings do not quite match the ones
     
 </section>
 
+<section id="extensions" class="block-templates">
+  <h2 class="item5"><i class="icon-fullscreen"></i> Extensions</h2>
+
+  <p>Joomla website functionality can be enhanced using various Joomla extensions. Some of them are often used in our templates. This section will teach you how to work with custom extensions.</p>
+
+<!-- ARTICLES NEWSFLASH MODULE -->
+  <div id="articles-newsflash">
+    <h3>Articles Newsflash</h3>
+
+    <div class="img-container"><figure class="img-polaroid"><img src="img/newsflash-adv-2.jpg" alt=""></figure>
+            <p class="muted text-center">Img 11. Articles Newsflash (Advanced) module</p></div>
+
+    <p>The Articles Newsflash (Advanced) module is an enhanced version of the default Joomla Articles Newsflash module. In addition to the default module features, it offers extra configuration options and Bootstrap based module templates.</p>
+
+    <h4>Additional Options</h4>
+
+      <p><b>Number of columns</b> - allows displaying articles in multiple columns.</p>
+      <p><b>Custom Link</b> - allows you to display a custom link under the module content. It can be linked to the external URL or to some Joomla menu item.   </p>  
+        <div class="img-container"><figure class="img-polaroid"><img src="img/newsflash-adv-1.png" alt=""></figure>
+                <p class="muted text-center">Img 12. Custom Link</p></div>
+       
+  <p><b>Pretext</b> - allows displaying custom text before the module content.</p>
+  <p><b>Published Date</b> - displays article published date. </p>
+  <p><b>Created by</b> - displays article author.</p>
+  <p><b>Show intro image</b>s - allows displaying article intro image.</p>
+  <p><b>Intro image align</b> - allows to align intro images.</p>
+
+  </div>
+
+
+  <!-- IMAGE SWOOP MODULE -->
+
+  <div id="image_swoop">
+    <h3>Image Swoop</h3>
+
+   <div class="img-container"><figure class="img-polaroid"> <img src="img/camera-slideshow-3.jpg" alt=""></figure>
+       <p class="muted text-center">Img 13. Image Swoop Module</p></div>
+
+    <p>The "Image Swoop" module is an outstanding responsive slider developed as a combination of the default Joomla “Articles Newsflash” module and the free open source jQuery plugin “Camera Slideshow”. It works perfectly
+on desktop and iOs or Android mobile devices. Compatible with all modern browsers starting from IE8.</p>
+
+    <p>The "Image Swoop" module has various configuration options, you can access them by opening the Image Swoop module in the <b>Extensions > Module Manager</b> section of your Joomla administration panel. All the main "Camera Slideshow" jQuery plugin options can be configured in the module settings area. </p>
+
+    <div class="img-container"><figure class="img-polaroid"><img src="img/camera-slideshow-2.jpg" alt="" ></figure>
+        <p class="muted text-center">Img 14. Image Swoop settings</p></div>
+
+    <p>Hover the mouse cursor over the option title to see its description. You can also learn more about Camera Slideshow jQuery plugin options on the <a href="http://www.pixedelic.com/plugins/camera/" target="_blank">official website</a></p>
+  </div>
+
+  <!-- Olark chat -->
+
+<div id="olark">
+  <h3> TM Olark live chat module</h3> 
+  <div class="img-container"><figure class="img-polaroid"><img src="img/olark.jpg" alt=""></figure> 
+  <p class="muted text-center">Image 25. TM Olark live chat module</p></div> 
+  <p>TM Olark is a live chat module for Joomla.</p> 
+  <div class="img-container"><figure class="img-polaroid"><img src="img/olark-2.jpg" alt=""></figure> 
+  <p class="muted text-center">Image 25-1. TM Olark live chat module settings</p></div> 
+  <p>In general settings you should add the website identifier which will show up after registration and filling in all the details at <a href="https://www.olark.com/install" target="_blank" rel="nofollow">https://www.olark.com/install</a></p> 
+  <div class="img-container"><figure class="img-polaroid"><img src="img/olark-3.jpg" alt=""></figure> 
+  <p class="muted text-center">Image 25-2. Website identifier in Olark control panel.</p></div> 
+  <p class="box-info"><span>You can also get a 180 day free trial of the 6 Month Olark Monster Deal! plan. Just follow this <a href="http://olark.com/signup/create_new_account/18981?utm_source=templatemonster&utm_medium=offer&utm_campaign=default">link</a> and fill in your personal data.</span></p>
+</div>
+
+     <!-- Cookie direcrive plugin -->
+
+ <div id="cookies">
+    <h3>Joomla Cookie Directive Plugin</h3>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/cookies-1.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 34. Joomla Cookie Directive Plugin</p></div>
+    <p>Joomla Cookie Directive Plugin displays a banner which clearly informs visitors that cookies are used on the site.</p>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/cookies-2.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 34-1. Joomla Cookie Directive Plugin settings</p></div>
+    <p>The main Joomla Cookie Directive Plugin settings you can see on the screenshot above. More information you will find on <a href="http://www.channeldigital.co.uk/resources/joomla-cookie-directive-plugin.html" target="_blank" rel="nofollow">the official site</a>.</p>
+  </div>
+
+    <!-- Acymailing -->
+    
+  <div id="acymailing">
+    <h3>Acymailing</h3>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/acymailing-1.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 31. Acymailing component</p></div>
+    <p>Acymailing is a newsletter component for Joomla!</p>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/acymailing-2.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 31-1. Acymailing component settings</p></div>
+    <p>The main Acymailing components page in the admin panel you can see on the screenshot above. More information you will find on  <a href="https://www.acyba.com/acymailing/doc.html" target="_blank" rel="nofollow">the official site</a>.</p>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/acymailing-3.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 31-2. Acymailing module settings</p></div>
+    <p>The Acymailing module settings page you can see on the screenshot above. More information you will find on  <a href="https://www.acyba.com/acymailing/62-acymailing-module.html" target="_blank" rel="nofollow">the official site</a>.</p>
+    <p>The Acymailing component package also installs some system plugins:</p> 
+    <ul>
+      <li>plg_acymailing_contentplugin</li>
+      <li>plg_acymailing_managetext</li>
+      <li>plg_acymailing_online</li>
+      <li>plg_acymailing_share</li>
+      <li>plg_acymailing_stats</li>
+      <li>plg_acymailing_tablecontents</li>
+      <li>plg_acymailing_tagcbuser</li>
+      <li>plg_acymailing_tagcontent</li>
+      <li>plg_acymailing_tagsubscriber</li>
+      <li>plg_acymailing_tagsubscription</li>
+      <li>plg_acymailing_tagtime</li>
+      <li>plg_acymailing_taguser</li>
+      <li>plg_acymailing_template</li>
+      <li>plg_editors_acyeditor</li>
+      <li>plg_system_regacymailing</li>
+    </ul>
+  </div>
+
+  <!-- Social blocks -->
+
+   <div id="facebook_feed">
+    <h3>SW Facebook Display</h3>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/facebook_feed-1.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 26. SW Facebook Display module</p></div>
+    <p>SW Facebook Display module displays the "Facebook Like Box".</p>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/facebook_feed-2.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 26-1. SW Facebook Display module settings</p></div>
+    <p>The main SW Facebook Display module settings page you can see on the screenshot above. More information you will find on <a href="http://socialwidgets.net/documentation/26-sw-facebook-display.html" target="_blank" rel="nofollow">the official site</a>.</p>
+  </div>
+
+  <div id="pinterest_feed">
+    <h3>SW Pinterest Display</h3>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/pinterest_feed-1.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 27. SW Pinterest Display module</p></div>
+    <p>SW Pinterest Display module displays the "Pinterest Board Widget".</p>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/pinterest_feed-2.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 27-1. SW Pinterest Display module settings</p></div>
+    <p>The main SW Pinterest Display module settings page you can see on the screenshot above. More information you will find on <a href="http://socialwidgets.net/documentation/28-sw-pinterest-display.html" target="_blank" rel="nofollow">the official site</a>.</p>
+  </div>
+
+  <div id="twitter_feed">
+    <h3>SW Twitter Display</h3>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/twitter_feed-1.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 28. SW Twitter Display module</p></div>
+    <p>SW Twitter Display module displays the "Twitter Widget".</p>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/twitter_feed-2.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 28-1. SW Twitter Display module settings</p></div>
+    <p>The main SW Twitter Display module settings page you can see on the screenshot above. More information you can find on <a href="http://socialwidgets.net/documentation/27-sw-twitter-display.html" target="_blank" rel="nofollow">the official site</a>.</p>
+  </div>
+
+  <div id="instagram_feed">
+    <h3>TM Instagram</h3>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/instagram-1.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 29. TM Instagram module</p></div>
+    <p>TM Instagram displays the "Instagram Widget"</p>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/instagram-2.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 29-1. TM Instagram module settings</p></div>
+    <p>The main TM Instagram module settings page you can see on the screenshot above. In the "Instagram username" field you should specify the Instagram profile name, in the "Number of photos" field specify the number of images to display in the widget, in the "Your Instagram CLIENT ID" insert your Instagram application ID. To get the Instagram ID, follow this link <a href="https://instagram.com/accounts/login/?next=%2Fdeveloper%2F" target="_blank" rel="nofollow">https://instagram.com/accounts/login/?next=%2Fdeveloper%2F</a> and register a new account. Then open this link <a href="http://instagram.com/developer/clients/manage/" target="_blank" rel="nofollow">http://instagram.com/developer/clients/manage/</a> and create an application there. Then you will get your application data that includes the application ID (CLIENT ID).</p>
+  </div>
+   
+   
+
 <section id="addendum" class="block-templates">
   <h2><i class="icon-question-sign"></i> Addendum  <small>Where to get help, support and additional information</small> </h2>
 
-  <p>We did our best to make this documentation as clear as possible. However, if you have any difficulties with the Joomla template or suggestions on improving the template or its documentation, feel free to contact our support team through:</p>
+  <p>We did our best to make this documentation as clear as possible. However, if you have any difficulties with the VirtueMart template or suggestions on improving the template or its documentation, feel free to contact our support team through:</p>
   
   <div id="help_support">
     <h4>Help and Support</h4>
@@ -1029,11 +770,6 @@ However, Joomla! will still operate if your settings do not quite match the ones
     <p>At <a href="http://extensions.joomla.org/" target="_blank">www.extensions.joomla.org</a> you can download more than 6 thousands of modules, plugins and components to add various features to your Joomla website.</p>
   </div>
 
-   <div id="joomla_extensions">
-    <h4>Joomla! Extensions</h4>
-    <p>At <a href="http://extensions.joomla.org/" target="_blank">extensions.joomla.org</a> you can download more than 6 thousand  modules, plugins and components to add various features to your Joomla website.</p>
-  </div>
-
   <div id="additional_links">
     <h4>Additional Links</h4>
     <ul class="list">
@@ -1058,7 +794,7 @@ However, Joomla! will still operate if your settings do not quite match the ones
 	<footer>
 		  <div class="container">        
 		   <div class="span12">
-			<span>Virtuemart Documentation</span><br />
+			<span>Virtuemart 3 Documentation</span><br />
 			&copy; <span id="date"></span> <span id="copyright">Template Monster</span>
 		   </div>
 		  </div>
