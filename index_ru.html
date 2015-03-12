@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VirtueMart3 Документация</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+  <link rel="stylesheet" href="css/responsive.css" media="screen">
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="stylesheet" href="css/flexslider.css"  media="screen">
+  <link rel="stylesheet" href="css/prettify.css"  media="screen">
+  <link rel="stylesheet" href="css/prettyPhoto.css"  media="screen">
+  <link rel="canonical" href="http://www.templatemonster.com/help/quick-start-guide/virtuemart-templates/master/index_en.html"/> 
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/jquery-migrate-1.1.0.js"></script>
+  <script src="js/prettify.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="js/bootstrap-affix.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script> 
+  <script src="js/script.js"></script>
+
+    <!--[if lt IE 8]>
+  		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+ 	  <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>  
+
+<!-- header
+================================================== -->
+<header class="header">
+  <div class="container">
+  <div class="row">
+  <article class="span4"><a class="brand" href="/help/" target="_blank"></a></article>
+ <article class="span6">
+ <h1>VirtueMart 3 Документация</h1>
+  </article> 
+
+  <article class="span2"> 
+    <div class="languages pull-right">
+      <!-- <span class="lang_label">Language: </span> -->
+      <!-- <div id="lang_icon"><b>En</b><i class="icon-angle-down"></i></div> -->
+      <!-- <ul id="lang_list">
+        <li class="active"><a href="index_en.html"><span>English </span><img src="img/flags/gb.png" height="14" width="22" alt="en"></a></li>
+        <li><a href="index_es.html"><span>Español </span><img src="img/flags/es.png" height="14" width="22" alt="es"></a></li>
+        <li><a href="index_de.html"><span>Deutsch </span><img src="img/flags/de.png" height="14" width="22" alt="de"></a></li>
+        <li><a href="index_ru.html"><span>Русский </span><img src="img/flags/ru.png" height="14" width="22" alt="ru"></a></li>
+      </ul> -->
+    </div>
+  </article> 
+  <article class="span2">  
+       <div id="languages" class="select-menu pull-right">
+        <div class="select-menu_icon"><b>Ru</b><i class="icon-angle-down"></i></div>
+        <ul class="select-menu_list">
+        </ul>
+      </div>
+      <div id="versions" class="select-menu pull-right">
+        <div class="select-menu_icon"><b>v1-1</b><i class="icon-angle-down"></i></div>
+        <ul class="select-menu_list">
+          <li class="active"><a href="/help/quick-start-guide/virtuemart-templates/v1-1/index_ru.html"><span>v1-1</span></a></li>
+          <li><a href="/help/quick-start-guide/virtuemart-templates/v1-0/index_ru.html"><span>v1-0</span></a></li>
+        </ul>
+      </div>
+    </article>  
+  </div>    
+  </div>
+</header>
+<div id="content"> 
+<div class="bg-content-top">
+<div class="container">
+
+<!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3"> 
+
+        <div id="nav_container">
+          <a href="javascript:;" id="affect_all">
+            <span class="expand">
+              <i class="icon-angle-down"></i>
+            </span>            
+            <span class="close">
+              <i class="icon-angle-up"></i>
+            </span>
+          </a>
+            <div class="clearfix"></div>    
+                <ul class="nav nav-list bs-docs-sidenav"  id="nav">
+                  <li class="nav-item item1">
+                    <dl class="slide-down">
+                       <dt><a href="#introduction" class="icon-info-sign">Введение</a></dt>
+                       <dd></dd>
+                     </dl>   
+                  </li>
+                  <li class="nav-item item2">
+                    <dl class="slide-down">
+                       <dt><a href="#prepare" class="icon-check">Подготовка </a></dt>  
+                       <dd></dd>                       
+                     </dl> 
+                  </li>           
+                  <li class="nav-item item3">
+                    <dl class="slide-down">
+                       <dt><a href="#getting_started" class="icon-play">Начало использования </a> <i class="icon-sample"></i></dt>
+                         <dd>
+                           <ul class="list">          
+                            <li><a href="#complete_install">Полная установка</a></li>
+                            <li><a href="#template-installation">Установка шаблона</a></li>
+							              <li><a href="#Virtuemart-installation">Установка Virtuemart</a></li>
+                            <li><a href="#sample-data-installation">Установка демо-данных</a></li>
+                            <li><a href="#modules-installation">Установка модулей</a></li>
+                           </ul> 
+                       </dd>
+                     </dl> 
+                  </li> 
+                  <li class="nav-item item4">
+                    <dl class="slide-down">
+                       <dt><a href="#modules_config" class="icon-cog">Настройки модулей</a></dt>
+                     </dl> 
+                  </li> 
+                  <li class="nav-item item5">
+                    <dl class="slide-down">
+                      <dt><a href="#extensions" class="icon-fullscreen">Расширения</a><i class="icon-sample"></i></dt>
+                      <dd>
+                        <ul class="list">
+                          <li><a href="#articles-newsflash">Articles Newsflash (Advanced)</a></li>
+                          <li><a href="#image_swoop">Image Swoop (Camera Slideshow)</a></li>
+                          <li><a href="#olark">Модуль TM Olark live chat</a></li>
+                          <li><a href="#cookies">Плагин Joomla Cookie Directive</a></li>
+                          <li><a href="#acymailing">Acymailing</a></li>
+                          <li><a href="#facebook_feed">SW Facebook Display</a></li>
+                          <li><a href="#pinterest_feed">SW Pinterest Display</a></li>
+                          <li><a href="#twitter_feed">SW Twitter Display</a></li>
+                          <li><a href="#instagram_feed">TM Instagram</a></li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </li>                  
+                  <li class="nav-item item8">
+                    <dl class="slide-down">
+                       <dt><a href="#addendum" class="icon-question-sign">Заключение</a></dt>
+                       <dd></dd>
+                     </dl> 
+                  </li> 
+                </ul>
+            </div>
+    </div> 
+
+      
+<div class="span9">
+
+<!-- box-content
+================================================== -->
+<div class="box-content">
+<!-- block-started
+================================================== -->
+<section class="block-started"  id="introduction">
+  <h2 class="item1"><i class="icon-info-sign"></i> Введение <small><i>Что находится в шаблоне и для чего его можно использовать</i></small></h2>
+  <p>Благодарим Вас за приобретение шаблона Joomla. Данная документация 
+состоит из нескольких частей и охватывает весь процесс установки и 
+настройки веб-сайта Joomla с нуля. Мы сделали все возможное, чтобы это 
+руководство было понятным и удобным в использовании.</p>
+  
+  <div id="joomla_cms_desc">
+    <h4>Что представляет собой Joomla CMS?</h4>
+    <p>Joomla CMS - это открытое программное обеспечение для построения 
+веб-сайтов. Оно позволяет создавать веб-сайты и мощные онлайн 
+приложения, а также почти не требует технических навыков или знаний в 
+управлении. Множество особенностей, в том числе простота использования и
+ расширяемость, сделали Joomla наиболее популярной программой для 
+веб-сайтов. <a href="http://www.joomla.org/about-joomla.html" target="_blank">Детали</a></p>
+  </div>
+
+  <div id="joomla_template_desc">
+    <h4>Что такое шаблон Joomla?</h4>
+    <p>Шаблон Joomla - это тема для платформы Joomla CMS. Другими 
+словами, внешний вид веб-сайта Joomla можно легко изменить путем 
+установки нового шаблона за несколько несложных шагов. При всей своей 
+простоте, шаблон Joomla содержит все необходимые исходные файлы, которые
+ можно редактировать желаемым образом.</p>
+  </div>
+
+   <div id="vm_com_desc">
+    <h4>Что такое VirtueMart 3.0? </h4>
+    <p>VirtueMart - это открытое программное обеспечение для интернет-магазина, созданное на основе платформы Joomla CMS. VirtueMart устанавливается на движок Joomla как компонент или плагин. </p> <p>Запускается VirtueMart в виде торговой корзины или в режиме каталога. Для создания интернет-магазина прежде всего необходимо установить платформу Joomla CMS, а затем установить и настроить VirtueMart. <a href="http://virtuemart.net/features/what-is-virtuemart" target="_blank">Детали</a></p>
+  </div>
+
+  <div id="file_structure">
+    <h4>Структура шаблона</h4>
+    <p>Приобретенный комплект шаблона состоит из нескольких папок. Осмотрим содержание каждой папки: </p>
+    <ul class="files_structure">
+      <li class="folder"><i class="icon-folder-close"></i> <b>Documentation</b><small class="muted"> - содержит файлы документации.</small>
+        <ul>
+          <li class="file"><i class="icon-file"></i> documentation.html<small class="muted"> - основной файл документации. Вы его сейчас читаете :)</small></li>
+        </ul>
+      </li>
+      <li class="folder"><i class="icon-folder-close"></i> <b>Joomla</b><small class="muted"> - содержит архив с темой Joomla, версию для быстрой установки и файл со скриптом для распаковки архива. </small>
+        <ul>
+          <li class="file"><i class="icon-file"></i> theme###.zip<small class="muted"> - архив с темой. Включает все файлы темы. Нужно устанавливать <a href="#template-installation">с помощью менеджера расширений Joomla</a>.</small></li>
+          <li class="file"><i class="icon-file"></i> fullpackage.zip<small class="muted"> - представляет собой комплект для <a href="#complete_install">полной установки Joomla</a> с файлами движка, темы и демо-данными (дамп базы данных, образцы изображений).</small></li>
+          <li class="file"><i class="icon-file"></i> unzip.php<small class="muted"> - файл, используемый для распаковки архива fullpackage.zip после загрузки на хостинг-сервер.</small></li>
+        </ul>
+      </li>
+      <li class="folder"><b>Screenshots</b><small class="muted"> - содержит скриншоты темы.</small></li>
+      <li class="folder"><b>Sources</b><small class="muted"> - вмещает исходные файлы и файлы демо-данных темы:</small>
+        <ul>
+          <li class="folder"><i class="icon-folder-close"></i> psd<small class="muted"> - исходные файлы шаблона для Adobe Photoshop(.psd).</small></li>
+          <li class="folder"><i class="icon-folder-close"></i> to_the_root_folder<small class="muted"> - папка с образцами данных, необходимых для того, чтобы веб-сайт выглядел как демо шаблона. Содержимое данной папки нужно загрузить в корневую директорию установки Joomla. </small></li>
+          <li class="file"><i class="icon-file"></i> dump.sql<small class="muted"> - файл дампа базы данных. Вмещает демо-данные темы. </small></li>
+          <li class="file"><i class="icon-file"></i> pkg_bundle.zip<small class="muted"> - включает дополнительные расширения для темы.</small></li>
+        </ul>
+      </li>
+      <li class="file"><i class="icon-file"></i> fonts_info.txt<small class="muted"> - содержит ссылки, по которым можно скачать шрифты шаблона.</small></li>
+      <li class="file"><i class="icon-file"></i> info.txt<small class="muted"> - инструкция по распаковыванию исходных файлов.</small></li>
+    </ul>
+  </div>
+</section>
+
+<section class="block-templates" id="prepare">  
+  <h2 class="item2"><i class="icon-check"></i> Подготовка <small><i>Что нужно сделать перед началом работы</i></small></h2>
+  <p>Прежде, чем перейти к установке веб-сайта Joomla, нужно полностью подготовиться. Рекомендуется выполнить следующие подготовительные шаги:</p>
+
+  <div id="software">
+    <h4>Программное обеспечение</h4>
+    <p>Для полноценной работы с шаблоном Joomla мы рекомендуем скачать все требуемые приложения. Список необходимого программного обеспечения находится на странице предпросмотра шаблона.  <br>Требования для различных шаблонов могут меняться, поэтому мы перечислим лишь основные:</p>
+
+    <ol>
+      <li>Прежде всего нужны правильные приложения для распаковывания защищенного паролем архива sources_#########.zip. Можно воспользоваться WinZip 9+ (Windows) и Stuffit Expander 10+ (Mac).</li>
+      <li>Также может понадобиться программа Adobe Photoshop. Она используется для редактирования исходных файлов .PSD и необходима, если требуется изменить графический дизайн и изображения шаблона.</li>
+      <li>Для редактирования исходного кода файлов шаблона нужно использовать редактор кода, например, Adobe Dreamweaver, Notepad++, Sublime Text и т.п.</li>
+      <li>Чтобы загрузить файлы на хостинг сервер, потребуется  FTP менеджер, например, Total Commander, FileZilla, CuteFTP и т.д.</li>
+    </ol>
+  </div>
+
+  <div id="hosting">
+    <h4>Хостинг</h4>
+    <p>Поскольку Joomla CMS является приложением PHP/MySQL, необходимо подготовить  хостинг сервер.</p>
+    <p>При наличии активного сервера, нужно проверить его на соответствие <a href="http://www.joomla.org/technical-requirements.html" target="_blank">требованиям</a><a href="http://www.joomla.org/technical-requirements.html" target="_blank"> Joomla </a> и на готовность использовать веб-сайты Joomla.</p>
+    <p>Также можно установить Joomla на компьютер при помощи локального сервера. Для создания локального хостинг сервера необходимо использовать программное обеспечение <b>WAMP</b>, <b>AppServ</b>, <b>MAMP</b> и т.п. Любое из них устанавливается как обычная программа и поддерживает Joomla. </p>
+    <p>Вы можете воспользоваться следующими туториалами для настройки локального сервера:</p>
+    <ul class="unstyled">
+      <li><i class="icon-film"> </i><a href="/help/how-to-install-appserv-web-development-environment.html" target="_blank">Как установить среду веб-разработки AppServ</a></li>
+      <li><i class="icon-film"> </i><a href="/help/how-to-install-wamp-web-development-environment.html" target="_blank">Как установить среду веб-разработки WAMP</a></li>
+      <li><i class="icon-film"> </i><a href="/help/how-to-install-xamp-web-development-environment.html" target="_blank">Как установить среду веб-разработки XAMP</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="block-templates" id="getting_started">  
+  <h2 class="item3"><i class="icon-play"></i>Начало использования <small><i>Куда нажимать, чтобы приступить к работе</i></small></h2>
+
+  <div class="row-fluid">
+    <div class="span6 text-center img-paraloid">
+      <h3><a href="#complete_install" class="scrollTo">Полная установка</a></h3>
+      <p>У меня нет веб-сайта Joomla и я хочу установить его с нуля. </p>
+      <p>При помощи этого метода устанавливаются движок Joomla CMS, шаблон Joomla, демо-данные и все требуемые расширения.</p>
+      <p>&nbsp;</p>
+    </div>
+    <div class="span6 text-center img-paraloid">
+      <h3><a href="#template-installation" class="scrollTo">Установка шаблона</a></h3>
+      <p>"У меня уже есть веб-сайт Joomla и я лишь хочу поменять его внешний вид путем установки нового шаблона."</p>
+      <p>Данный метод устанавливает шаблон Joomla и все требуемые расширения.</p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+
+  <!-- Complete Joomla Installation -->
+  <div id="complete_install">
+  <h3>Полная установка</h3>
+  <p>Полная установка используется в том случае, если нужно установить веб-сайт Joomla с нуля. Предусматривается предварительное выполнение всех <a href="#prepare">подготовительных шагов </a>и наличие необходимых программ.</p>
+
+    <!-- Creating database -->
+
+  <article id="creating-database">
+    <h4>Создание базы данных</h4>
+    <p>Когда все файлы будут загружены на хостинг сервер, необходимо подготовить новую базу данных для веб-сайта  Joomla. Ее можно создать через инструмент управления базами данных в контрольной панели хостинга (<i>обычно PhpMyAdmin</i>).</p>
+
+    <p>При помощи phpMyAdmin возможно создать новую базу данных в 3 простых шага: (см. следующие слайды)</p>
+
+     <ol class="list">
+      <li>Щелкните кнопку Database (база данных) в верхнем меню навигации, чтобы перейти в список баз данных.</li>
+      <li>Введите название базы данных в поле "Create new database (Создать новую базу данных)".</li>
+      <li>Нажмите справа на кнопку Create (Создать).</li>
+    </ol>
+
+    <p>База данных появилась в списке. Кликните по ее названию, чтобы получить доступ к ней:</p>
+
+    <p>&nbsp;</p>
+
+    <div class="flexslider clearfix img-polaroid">
+      <ul class="slides">
+        <li>
+          <img src="img/database-create-1.jpg" alt="" />
+          <div class="flex-caption">
+            <p>1. Откройте вкладку "Database (База данных)", чтобы перейти в список баз данных.</p>
+          </div>
+        </li>                   
+        <li>
+          <img src="img/database-create-2.jpg" alt="" />
+          <div class="flex-caption">
+            <p>2. Введите название базы данных. <br>
+                        3. Щелкните кнопку "Создать".</p>
+          </div>
+        </li>
+        <li>
+          <img src="img/database-create-3.jpg" alt="" />
+          <div class="flex-caption">
+            <p>4. База данных появилась в списке. Кликните по названию, чтобы получить доступ в базу данных.</p>
+          </div>
+        </li> 
+      </ul>    
+    </div>
+
+    <p>&nbsp;</p>
+                
+    <p>Вы также можете воспользоваться детальным видео туториалом <i class="icon-film"> </i><a href="/help/how-to-create-a-database.html" target="_blank">Как создать базу данных</a></p>
+
+    <div class="box-info"><span>При возникновении сложностей при создании базы данных, необходимо обратиться к хостинг провайдеру за поддержкой. </span></div>
+  </article>
+
+  <!-- Uploading files -->
+  <article id="uploading">
+    <h4>Загрузка и разархивация</h4>
+    <p class="">Для начала работы с Joomla, требуется загрузить файлы на хостинг сервер. Это можно сделать при помощи файлового менеджера хостинга или альтернативного FTP менеджера.</p>
+                
+      <ol>
+        <li>Откройте шаблон и перейдите в папку 'joomla'.</li>
+        <li>Выделите файлы 'unzip.php' и 'fullpackage.zip' и загрузите на сервер (
+          <i class="icon-film"> </i><a href="/help/how-upload-files-server-2.html" target="_blank">Как загрузить файлы на сервер.</a>
+          )</li>
+        <li>Введите путь к файлу  'unzip.php' на сервере(<i class="muted">http://your_domain_name/unzip.php</i>) в адресной строке браузера<abbr title="Internet Explorer, Google Chrome, Mozilla Firefox, Opera, Safari etc."></abbr>.</li>
+        <li>Должно появиться следующее окно:</li>
+      </ol>
+                
+      <figure class="img-paraloid"><img src="img/complete-install-unzip-php.jpg" alt="Unzip.php initial screen."></figure>
+      <p class="muted text-center">Рис 1. Стартовый экран скрипта unzip.php.</p>
+                
+      <ol start="5">
+        <li>В поле 'Choose your zip file (Выберите файл zip)' выберите загруженный файл fullpackage.zip.</li>
+        <li>В поле 'Unzip to (Распаковать в)' укажите директорию, куда нужно распаковать файлы.</li>
+        <li>Нажмите кнопку 'Unzip (Распаковать)', чтобы распаковать файлы.</li>
+      </ol>
+                
+      <div class="box-info"><span>Задайте правильные разрешения на папку, куда нужно разархивировать файлы. Разрешения должны быть CHMOD 755 или 777 в зависимости от конфигурации сервера. </span></div>
+  </article>
+
+    
+  <!-- Joomla CMS installation -->
+
+  <article id="joomla-cms-installation">
+    <h4>Установка Joomla CMS</h4>
+
+    <p> Проверьте выполнение всех <a href="#prepare">подготовительных шагов </a> и наличие требуемых программ.</p>    
+    <p>Откройте браузер и пропишите путь к директории  Joomla в адресной строке браузера (<i>например, http://your_domain_name/joomla</i>). Должен появиться экран установки Joomla CMS:</p>
+    
+    <p>&nbsp;</p>
+    <h5 id="joomla-install-configuration"><span class="badge">Шаг 1</span>Configuration (Конфигурация сайта)</h5>    
+    <p>&nbsp;</p> 
+              
+      <p>В выпадающем меню "Select Language (Выбрать язык)" выберите язык установки Joomla.</p>
+        <p><span class="label label-info">Внимание:</span> выпадающее меню "Select Language (Выбрать язык)" позволяет выбрать лишь язык процесса установки  Joomla. Данная опция не влияет на язык веб-сайта.</p>
+              
+      <p>Нужно заполнить все поля формы в разделе "Main Configuration (Основные настройки)". Обязательные поля отмечены звездочкой *.</p>
+      <p>Заполните поля  "Admin Email (Email администратора)", "Admin Username (Имя администратора)" и "Admin Password (Пароль администратора)" в правой колонке, чтобы создать пользователя нового веб-сайта Joomla с административными правами.</p>
+              
+      <div class="box-error"><span>"Admin Email (Email администратора)", "Admin Username (Имя администратора)" и "Admin Password (Пароль администратора)"  требуются для доступа в админ панель веб-сайта Joomla Web. Храните их в надежном месте. </span></div>
+
+      <figure class="img-polaroid"><img src="img/cms-install-1.jpg" alt=""></figure>
+      <p class="muted text-center">Рис 2. Установка. Joomla CMS. Шаг 1. Конфигурация сайта</p>
+              
+      <p>Когда все данные введены, нажмите кнопку <button class="btn btn-primary">Next (Далее)</button> в верхнем правом углу. </p>
+           
+
+    <p>&nbsp;</p>       
+    <h5 id="joomla-install-database"><span class="badge">Шаг 2</span> Database (Конфигурация Базы Данных)</h5>
+    <p>&nbsp;</p>
+              
+      <p>На втором этапе установки Joomla CMS необходимо ввести детали базы данных. Если они неизвестны, обратитесь к хостинг-провайдеру.</p>
+              
+      <p>Поскольку  Joomla устанавливается с нуля, нужно всего лишь ввести "Host Name (Название хостинга)", "Username (Имя пользователя)", "Database Name (Название базы данных)" и "Password (Пароль)". Остальные опции следует оставить по умолчанию, хотя возможны различия в зависимости от хостинг-провайдера. </p>
+
+      <figure class="img-polaroid"><img src="img/cms-install-2.jpg" alt=""></figure>
+      <p class="muted text-center">Рис 3. Установка Joomla CMS. Шаг 2. Конфигурация Базы Данных</p>
+              
+      <p>Когда введете детали, щелкните кнопку <button class="btn btn-primary">Install (Установить)</button> в верхнем правом углу. </p>
+              
+
+    <p>&nbsp;</p>          
+    <h5 id="joomla-install-overview"><span class="badge">Шаг 3</span>(Overview) Обзор</h5>
+    <p>&nbsp;</p>     
+              
+      <p>Установка Joomla CMS почти завершена. На этапе Overview нужно определиться с установкой демо-данных  Joomla. </p>
+      <div class="box-info"><span>Внимание: Демо-данные необходимы, если требуется, чтобы веб-сайт  Joomla выглядел полностью как на демо со всеми изображениями, текстом и настройками модулей. Для этого выберите демо-данные под названием "sample_theme###", где ### является номером темы.</span> </div>
+        
+      <p>Выберите демо-данные для установки или нажмите "None (Нет)", если необходим пустой веб-сайт Joomla без содержимого.</p>
+
+      <figure class="img-polaroid"><img src="img/cms-install-3-1.jpg" alt=""></figure>
+      <p class="muted text-center">Рис 4-1. Установка Joomla CMS. Шаг 3. Overview (Обзор). Импорт демо-данных</p>
+
+      <p>Ниже можно проверить, являются ли детали конфигурации базы данных и доступа в админ панель действительными, и отправить их на email.</p>
+
+      <figure class="img-polaroid"><img src="img/cms-install-3-2.jpg" alt=""></figure>
+      <p class="muted text-center">Рис 4-1. Установка Joomla CMS. Этап 3. Обзор. Конфигурация</p>
+              
+      <p>Можно проверить настройки установки и проверить соответствие хостинг сервера требованиям  Joomla. Если присутствуют красные предупреждения в "Recommended settings (Рекомендуемые настройки)", обратитесь к хостинг-провайдеру за дальнейшей поддержкой.</p>
+
+      <figure class="img-polaroid"><img src="img/cms-install-3-3.jpg" alt=""></figure>
+      <p class="muted text-center">Рис 4.Установка Joomla CMS. Шаг 3. Настройки сервера</p>
+              
+      <p>По окончанию нажмите кнопку <button class="btn btn-primary">Install (Установить)</button> в верхнем правом углу. </p>
+
+
+    <p>&nbsp;</p>          
+    <h5 id="joomla-install-complete"><span class="badge">Шаг 4</span> Установка Завершена</h5>
+    <p>&nbsp;</p>
+              
+    <p>Поздравляем! Вы установили Joomla.</p>
+              
+    <figure class="img-polaroid"><img src="img/cms-install-4.jpg" alt=""></figure>
+    <p class="muted text-center">Рис 5. Установка Joomla CMS. Шаг 4. Установка завершена</p>
+              
+    <p>С целью повышения безопасности удалите папку "Installation" из корневой директории Joomla .</p>
+
+    <p><span class="label label-success">Подсказка:</span> Вы можете воспользоваться детальным видео туториалом: <i class="icon-film"> </i> <a href="/help/joomla-3-0-how-to-install-joomla-engine.html" target="_blank">Как установить движок Joomla 3.</a></p>
+
+    <div class="box-info"><span>Внимание: если вы выполнили "Complete Installation (Полную установку)", можно пропустить разделы "Template Installation (Установка шаблона)", "Sample data installation (Установка демо-данных)" и "Extensions Installation (Установка расширений)", поскольку все эти элементы уже полностью установлены.</span></div>
+  </article>
+    
+      <p>Теперь можно приступить к настройке веб-сайта Joomla CMS. Нажмите кнопку "<b>Site (Сайт)</b>", чтобы открыть веб-сайт или "<b>Administrator</b>  (Администратор)", чтобы перейти в админ панель Joomla.</p>
+
+      <div class="box-error">
+    <span>Последним, но не менее важным, шагом является обновление базы данных:</span>
+  </div>
+  
+  <ol>
+    <li>Перейдите в меню <strong>Components->VirtueMart->Configuration->Configuration-> (Компоненты->VirtueMart->Настройки->Настройки)</strong>, прокрутите станицу вниз до секции <strong>&quot;Advanced Settings (Дополнительные параметры)&quot;</strong>, выделите опцию <strong>&quot;Enable database Update tools (Включить инструмент обновления базы данных)&quot;</strong> и в верхнем правом углу нажмите кнопку <strong>&quot;Save & Close (Сохранить и Закрыть)&quot;</strong>.</li>
+    <li>Теперь перейдите в меню <strong>Tools->Tools &amp; Migration (Инструменты->Инструменты и Миграция)</strong> и нажмите кнопку <strong>"Install tables or if necessary update them (Установить таблицы или обновить их, если необходимо)"</strong>.</li>
+  </ol>
+  <p>Это были пошаговые инструкции &quot;быстрой&quot; установки. После установки шаблона с помощью архива fullpackage.zip и загрузки демо-контента, ваш сайт будет выглядеть и работать как приобретенный шаблон VirtueMart2.</p>
+  <p>Если вы желаете установить движок Joomla! вручную, шаги установки будут такими же, как инструкции по установке с помощью архива fullpackage.zip. Но в данной случае, следующим шагом является установка и активация приобретенного шаблона Joomla.</p>
+
+  </div>
+  <div class="block-templates" id="template-installation">
+    <h3>Установка шаблона</h3>
+    <p>Данный метод установки следует использовать, если у вас уже есть веб-сайт Joomla и просто необходимо поменять его внешний вид на тему шаблона.</p>
+    
+    <!-- Extensions manager -->         
+    <p><span class="badge">Шаг 1.</span>В админ панели Joomla перейдите в меню <b>"Extensions -> Extensions Manager (Расширения -> Менеджер расширений)"</b>.</p>          
+    <figure class="img-polaroid"><img src="img/template-install-1.jpg" alt=""></figure>
+    <p class="muted text-center">Рис 6. Установка шаблона Joomla. Шаг 1. Менеджер расширений</p>
+
+    <!-- Upload theme zip -->         
+    <p><span class="badge">Шаг 2.</span> Во вкладке Package File (Файл шаблона) нажмите кнопку "Choose File (Выбрать файл)" и выберите файл "<b>theme###.zip</b>" из папки "joomla" архива шаблона.</p>         
+    <figure class="img-polaroid"><img src="img/template-install-2.jpg" alt=""></figure>
+    <p class="muted text-center">Рис  7. Установка шаблона Joomla. Шаг 2. Загрузка архива с темой</p>          
+    <p>Нажмите кнопку <button class="btn btn-primary">Upload & Install (Загрузить и установить)</button> для установки шаблона Joomla.</p>
+
+    <!-- Activate template -->          
+    <p><span class="badge">Шаг 3.</span> После завершения загрузки, необходимо активировать установленный шаблон. В верхнем меню выберите "<b>Extensions -> Template Manager (Расширения -> Менеджер шаблонов)</b>."</p>         
+    <figure class="img-polaroid"><img src="img/template-install-3.jpg" alt=""></figure>
+    <p class="muted text-center">Рис 8. Установка шаблона Joomla. Шаг 3. Активация шаблона</p>         
+    <p>Выберите новый шаблон и в верхнем правом углу нажмите кнопку "<b>Make Default (По умолчанию)</b>". Теперь откройте ваш сайт, чтобы просмотреть изменения.</p>
+  </div>
+
+<div class="block-templates" id="Virtuemart-installation">
+    <h3 id="virtuemart_install">Установка Virtuemart3 (последней версии)</h3>
+             
+<p>Данная инструкция предполагает, что вы уже установили движок Joomla 2.5.14. Вы также можете воспользоваться детальным видео туториалом и пошаговыми инструкциями <a href="/help/joomla-1-7-how-to-install-engine.html" target="_blank">по установке системы управления содержимым Joomla.</a></p>
+              <p>1. Сначала необходимо скачать последнюю версию компонента Virtuemart 2.x.x <a title="Vrituemart 2.0.0 download" href="http://virtuemart.net/downloads" rel="nofollow"> по этой ссылке</a>. Следует скачать файл под названием com_virtuemart.2.0.xx_extract_first.zip.(последнюю версию)</p>
+              <p>2. Когда файл будет скачан, разархивируйте его в любую папку на компьютере или на рабочий стол. В <span class="IL_AD" id="IL_AD10">zip архиве компонента</span> находится еще 2 файла:</p>
+              <ul>
+                <li>com_virtuemart.2.0.xx.zip (последняя версия)</li>
+                <li>com_virtuemart_ext_aio.2.0.xx.zip (последняя версия)</li>
+              </ul>
+              <p>3. Теперь войдите в админ панель Joomla, используя необходимые имя пользователя и пароль.</p>
+              <p>4. Перейдите в меню <strong>Extensions </strong>&gt; <strong>Extension Manager</strong> (<strong>Расширения </strong>&gt; <strong>Менеджер расширений</strong>).</p>
+              <p>5. Нажмите кнопку <strong>Browse (Обзор)</strong> и выберите файл  <strong>com_virtuemart.3.0.xx.zip(последняя версия)</strong>. Затем кликните кнопку <strong>Upload &amp; Install (Загрузить и установить)</strong>.</p>
+              <p><img alt="install-virtue-mart" src="img/install-virtue-mart.png" height="400" width="718"></p>
+              <p>Вы увидите следующее сообщение: "<strong>The installation was successful (Установка прошла успешно)</strong>".</p>
+              <p>6. Теперь необходимо установить файл <strong>com_virtuemart_ext_aio.3.0.xx.zip(последняя версия)</strong>. Нажмите кнопку <strong>Browse (Обзор)</strong> и выберите файл <strong>com_virtuemart_ext_aio.3.0.xx.zip(последняя версия)</strong>. Затем кликните кнопку <strong>Upload &amp; Install (Загрузить и установить)</strong>. Когда установка будет завершена, вы увидите ссылку Virtuemart под меню <strong>Components (Компоненты)</strong>.</p>
+              <p><img alt="install-virtuemart-2" src="img/install-virtuemart-2.png" height="290" width="348"></p>
+              <p>7. Проверьте, были ли установлены Virtuemart плагины и модули. Перейдите в меню <strong>Extensions </strong>&gt; <strong>Module Manager (Расширения &gt; Менеджер модулей)</strong>. В поле Filter (Фильтр) введите <strong>vm</strong> и нажмите кнопку <strong>Search (Искать)</strong>. Вы должны увидеть список следующих Virtuemart модулей:</p>
+<p><img alt="install-virtuemart-3" src="img/install-virtuemart-3.png" height="360" width="755"></p>
+              <p>Повторите эти же шаги для плагинов. Перейдите в меню <strong>Extensions </strong>&gt; <strong>Plug-in Manager (Расширения &gt; Менеджер плагинов)</strong>. В поле Filter (Фильтр) введите <strong>vm</strong> и нажмите кнопку <strong>Search (Искать)</strong>. Вы должны увидеть список следующих Virtuemart плагинов:</p>
+              <p><img alt="install-virtuemart-4" src="img/install-virtuemart-4.png" height="416" width="763"></p>
+              <p>8. Вернитесь в <strong>Module manager (Менеджер модулей)</strong> и включите модули, которые желаете использовать на сайте. Здесь также можно изменить позиции модулей. Откройте свой сайт, чтобы проверить новые Virtuemart модули.</p>
+              <p>9. Далее необходимо создать новый пункт меню, чтобы посетители сайта могли перейти на страницу магазина. Для этого перейдите в <strong>Menus (Меню)</strong> и выберите меню, в которое вы хотите добавить ссылку на страницу магазина. Например, можно добавить ссылку в верхнее меню, боковое меню и т.п.</p>
+              <p>В нашем примере мы будем редактировать верхнее меню. Перейдите в <strong> Menus </strong>&gt; <strong>Top (Меню &gt; Верхнее)</strong>.</p>
+              <p><img alt="install-virtuemart-5" src="img/install-virtuemart-5.png" height="117" width="648"></p>
+              <p>10. В верхней панели навигации нажмите кнопку <strong>New (Новый)</strong>.</p>
+              <p><img alt="install-virtuemart-6" src="img/install-virtuemart-6.png" height="60" width="513"></p>
+              <p>11. Во вкладке <strong>Details (Детали)</strong>  напротив поля <strong>Menu Item Type (Тип меню)</strong><span><strong> *</strong></span> кликните кнопку <strong>Select (Выбрать)</strong>.</p>
+              <p><span>В появившемся окне вы увидите список типов меню. </span>Мы выберем тип <strong>VirtueMart Categories Layout</strong>.</p>
+<p><img alt="install-virtuemart-7" src="img/install-virtuemart-7.png" height="481" width="626"></p>
+              <p>12. Введите <strong> Menu Title (Заголовок меню)</strong> и в верхнем левом углу нажмите кнопку <strong>Save and Close (Сохранить и Закрыть)</strong>.</p>
+  </div>
+  <!-- Sample data installation -->
+  <div class="block-templates" id="sample-data-installation">
+  <h3>Установка демо-данных</h3>
+  <p>Демо-данные используются для того, чтобы веб-сайт Joomla выглядел как демо шаблона. К ним относятся образцы статей, картинок, настройки модулей, веб-сайта и т.п. Если вам не нужны образцы изображений или другой демо-контент, пропустите данный этап. </p>
+  <p>Установка демо-данных проводиться в два простых шага.</p>
+  
+  <h4><b>Шаг 1.</b> Загрузка демо-картинок.</h4>
+  <p>Чтобы загрузить демо-картинки, откройте архив шаблона и перейдите в папку "sources". Там находится папка "to_the_root_directory". Она содержит файлы, которые нужно загрузить в корневую папку установки Joomla. Для загрузки файлов на сервер воспользуйтесь файловым менеджером.</p>
+  
+  <h4><b>Шаг 2.</b> Импорт SQL файла.</h4>
+  <p>Последним и наиболее важным шагом установки демо-данных является импорт файла SQL. Файл SQL - это дамп базы данных, где хранятся все данные веб-сайта Joomla. Файл SQL можно импортировать при помощи инструмента управления базами данных  (phpMyAdmin). Файл SQL шаблона "dump.sql" также находится в папке "sources" . </p>
+    <p>&nbsp;</p>
+
+  <div class="box-info"><span><b>НЕЛЬЗЯ</b> импортировать SQL файл в базу данных действующего веб-сайта, поскольку это перепишет содержимое базы данных и весь контент будет утерян.</span> </div>
+  <div class="box-error"><span>Внимание: Перед импортом SQL файла убедитесь, что префикс таблиц вашей базы данных соответствует префиксу таблиц в SQL файле.</span> </div>
+  <p>Префикс таблиц базы данных можно проверить непосредственно в инструменте управления базами данных. Обратите внимание на названия таблиц. Префикс - это набор символов перед названием таблиц (<i>например, в таблице "jos_assets" префикс - "jos_"</i>). Также префикс базы данных можно найти в файле "configuration.php" в корневой папке Joomla. Строка 19: <code>public $dbprefix = 'jos_';</code> (<i>где префикс -  "jos_"</i>).</p>
+  <p>В случае, если префикс таблиц базы данных другой, откройте файл "dump.sql" в текстовом редакторе и при помощи функции "Найти и заменить" (горячие клавиши CTRL+F или CTRL+H) замените префикс "jos_" (<i>используется в SQL файле</i>) на префикс вашей базы данных. Вы также можете воспользоваться детальным видео туториалом, <a href="/help/joomla-how-to-change-database-tables-prefix-in-sql-file.html" target="_blank">как изменить префикс базы данных в SQL файле</a>.</p>
+  <p>Теперь можно импортировать SQL файл в базу данных. <br>
+  Чтобы импортировать демо-данные в базу данных, выполните следующее: (см. слайдер)</p>
+
+  <ol class="list">
+    <li>Выберите нужную базу данных в списке слева в инструменте phpMyAdmin.</li>
+    <li>Откройте вкладку "Import (Импорт)" в верхнем меню навигации.</li>
+    <li>Нажмите "Choose file (Выбрать файл)" и найдите файл dump.sql в папке "sources" шаблона.</li>
+    <li>Кликните кнопку "Go (Вперед)", чтобы импортировать демо-данные.</li>
+  </ol>
+
+      <p>&nbsp;</p>
+
+    <div class="flexslider clearfix img-polaroid">
+      <ul class="slides">
+        <li>
+          <img src="img/sample-install-1.jpg" alt="" />
+          <div class="flex-caption">
+           <p> 1. Выберите необходимую базу данных.</p>
+          </div>
+        </li>                   
+        <li>
+          <img src="img/sample-install-2.jpg" alt="" />
+          <div class="flex-caption"><p>2. Откройте вкладку "Import (Импорт)".</p></div>
+        </li>
+        <li>
+          <img src="img/sample-install-3.jpg" alt="" />
+          <div class="flex-caption">
+            <p>3. Нажмите "Choose file (Выбрать файл)" и найдите файл dump.sql в папке "sources" шаблона.<br>
+                        4. Кликните кнопку "Go (Вперед)", чтобы импортировать демо-данные.</p>
+          </div>
+        </li> 
+      </ul>    
+    </div>
+
+    <p>&nbsp;</p>
+
+    <p>Вы также можете воспользоваться детальным туториалом <i class="icon-film"> </i><a href="/help/phpmyadmin-how-to-import-sample-data-dump-file.html" target="_blank">как импортировать SQL файл при помощи инструмента phpMyAdmin.</a></p>
+  </div>
+
+  <div class="block-templates" id="modules-installation"> 
+    <h3>Установка модулей</h3> 
+    <p>Темы Joomla содержат дополнительные расширения: модуля, плагины и компоненты, которые применяются с целью расширения функциональности. Все дополнительные расширения можно легко установить при помощи специального архива.</p> 
+    <p>Данный архив находится в папке 'sources' шаблона и называется 'pkg_bundle.zip'. Его очень просто установить, как и любое другое расширение или тему, через <b>Joomla admin panel > Extensions manager (Админ панель Joomla &gt; Менеджер расширений)</b>. </p> 
+    <ol> 
+      <li>Откройте админ панель Joomla. В панели управления выберите '<b>Extensions (Расширения)</b>'. В появившемся выпадающем меню кликните '<b>Extensions Manager (Менеджер расширений)</b>'.</li> 
+      <li>Выберите опцию 'Install (Установка)' в левой колонке.</li> 
+      <li>Нажмите кнопку 'Browse/Choose file (Обзор/Выбрать файл)' и найдите архив 'sources/pkg_bundle.zip'.</li> 
+      <li>Кликните кнопку 'Upload and install (Загрузить и установить)', чтобы установить все модуля. </li> 
+    </ol> 
+    <figure class="img-polaroid"><img src="img/extensions_manager.jpg" alt="" /></figure> 
+    <p>Если тема содержит расширения, не включенные в файл '<b>pkg_bundle.zip</b>', их нужно установить отдельно. Установка выполняется таким же образом, что и 'sources/pkg_bundle.zip', через '<b>Extensions Manager</b> (Менеджер расширений)'.</p> 
+    <p>Названия архивов с расширениями обычно начинаются с '<b>mod_</b>', '<b>com_</b>' или '<b>plg_</b>', поэтому их очень просто узнать. </p> 
+  </div>
+</section>
+
+
+<section class="block-templates" id="modules_config">
+ <h2 class="item4"><i class="icon-cog"></i> Настройка модулей</h2>
+              <p>Шаблон может содержать модули, не включенные в базовую установку VirtueMart/Joomla! и их необходимо устанавливать вручную. Процедура установки та же, что описана на шаге 1 данной документации.</p>
+              <ol>
+                <li>В админ панели Joomla! перейдите в меню "<strong>Extensions</strong> - <strong>Extensions Manager</strong> <strong>(Расширения</strong> - <strong>Менеджер разширений)</strong>".</li>
+                <li>Нажмите кнопку Browse (Обзор) и выберите архив расширения из папки <strong>"sources"</strong> архива шаблона. </li>
+                <li>Кликните кнопку "<strong>Upload &amp; Install (Загрузить и установить)</strong>". </li>
+                <li>Перейдите в меню "<strong>Extensions - Module manager (Расширения - Менеджер модулей)</strong>". Установленные модули появятся в списке модулей.</li>
+              </ol>
+              <p>Откройте модуль и установите его настройки в соответствии с таблицей Настроек модулей.</p>
+                
+<div id="mod_table">
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>1</b> - Breadcrumbs</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_breadcrumbs</li>
+        <li><b>Position (Позиция):</b> breadcrumbs</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> no</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> -Home</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>2</b> - Currencies</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_virtuemart_currencies</li>
+        <li><b>Position (Позиция):</b> top-c</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> yes</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> All</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>3</b> - Top menu</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_menu</li>
+        <li><b>Position (Позиция):</b> top-a</li>
+        <li><b>Class Suffix (Класс):</b> top-menu</li>
+        <li><b>Show Title (Показать заголовок):</b> no</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> All</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>4</b> - Footer</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_footer</li>
+        <li><b>Position (Позиция):</b> copyright</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> yes</li>
+        <li><b>Order (Порядковый номер):</b> 0</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> All</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>5</b> - Categories</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_virtuemart_category</li>
+        <li><b>Position (Позиция):</b> aside-left</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> yes</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> My Orders<br />My cart<br />Contact vendor<br />Vendor details<br />Vendor TOS<br />About us<br />Bounce Houses<br />Online Store<br />Shopping  cart<br />Shipping & Returns<br />Group Sales</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>6</b> - Brands</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_virtuemart_manufacturer</li>
+        <li><b>Position (Позиция):</b> aside-left</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> yes</li>
+        <li><b>Order (Порядковый номер):</b> 3</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> -Contacts<br />-Blog<br />-About us<br />-Vendor TOS<br />-Vendor details<br />-Contact vendor<br />-My cart<br />-My Orders<br />-Home</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>7</b> - Module BannersBlock Content</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_bannersblock</li>
+        <li><b>Position (Позиция):</b> galerific</li>
+        <li><b>Class Suffix (Класс):</b> content_first</li>
+        <li><b>Show Title (Показать заголовок):</b> no</li>
+        <li><b>Order (Порядковый номер):</b> 2</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> Home</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>8</b> - Slideshow CK</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_slideshowck</li>
+        <li><b>Position (Позиция):</b> showcase</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> no</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> Home</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>9</b> - Articles Menu</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_articles_categories</li>
+        <li><b>Position (Позиция):</b> aside-left</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> yes</li>
+        <li><b>Order (Порядковый номер):</b> 4</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> Blog</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>10</b> - User Login</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_login</li>
+        <li><b>Position (Позиция):</b> aside-left</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> yes</li>
+        <li><b>Order (Порядковый номер):</b> 5</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> Blog</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>11</b> - ShareThis | Article</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_sharethis</li>
+        <li><b>Position (Позиция):</b> article-page</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> yes</li>
+        <li><b>Order (Порядковый номер):</b> 0</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> All</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>12</b> - ShareThis | Product</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_sharethis</li>
+        <li><b>Position (Позиция):</b> product-page</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> yes</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> All</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>13</b> - Categories Navigation</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_openglobal_virtuemart_categories</li>
+        <li><b>Position (Позиция):</b> </li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> yes</li>
+        <li><b>Order (Порядковый номер):</b> 2</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> All</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>14</b> - Search</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_search</li>
+        <li><b>Position (Позиция):</b> top-b</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> no</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> All</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>15</b> - My Cart:</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_virtuemart_cart_tm</li>
+        <li><b>Position (Позиция):</b> header-a</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> no</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> All</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>16</b> - Olark Chat</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_olark_chat</li>
+        <li><b>Position (Позиция):</b> chat</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> no</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> All</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>17</b> - Contacts</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_custom</li>
+        <li><b>Position (Позиция):</b> footer-b</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> yes</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> All</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>18</b> - Follow us on facebook</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_bt_facebooklikebox</li>
+        <li><b>Position (Позиция):</b> footer-e</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> no</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> All</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>19</b> - Bestsellers</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_virtuemart_product</li>
+        <li><b>Position (Позиция):</b> aside-left</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> yes</li>
+        <li><b>Order (Порядковый номер):</b> 6</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> My Orders<br />Contact vendor<br />Vendor details<br />Vendor TOS<br />About us<br />Bounce Houses<br />Online Store</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>20</b> - Module ParallaxBlock</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_parallaxblock</li>
+        <li><b>Position (Позиция):</b> paralax-top2</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> no</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> Home</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>21</b> - From the blog</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_articles_news</li>
+        <li><b>Position (Позиция):</b> custom-html</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> yes</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> Home</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>22</b> - New Products</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_virtuemart_product</li>
+        <li><b>Position (Позиция):</b> featured</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> yes</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> Home</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>23</b> - Custom HTML  Paralax</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_custom</li>
+        <li><b>Position (Позиция):</b> paralax-top2</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> no</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> Home</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>24</b> - Specials</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_virtuemart_product</li>
+        <li><b>Position (Позиция):</b> latest</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> yes</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> Home</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>25</b> - 6Maps</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_6map</li>
+        <li><b>Position (Позиция):</b> footer-d</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> no</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> All</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>26</b> - Bootstrap Mega Menu</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_bootstrapmegamenu</li>
+        <li><b>Position (Позиция):</b> navigation</li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> yes</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> All</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+
+  <div class='module'>
+  <div class='row-fluid'>
+    <div class='span3'><b>27</b> - Menu Banner</div>
+
+    <div class='span4'>
+      <ul>
+        <li><b>Type (Тип):</b> mod_bannersblock</li>
+        <li><b>Position (Позиция):</b> </li>
+        <li><b>Class Suffix (Класс):</b> </li>
+        <li><b>Show Title (Показать заголовок):</b> no</li>
+        <li><b>Order (Порядковый номер):</b> 1</li>        
+      </ul>
+    </div>
+    <div class='span5'>
+      <ul>
+        <li><b>Pages (Страницы):</b> All</li>
+        <li></li>
+        <li><b>Additional info (Дополнительная информация):</b> &nbsp;</li>
+      </ul>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  </div>
+</div>
+<p>Чтобы сохранить изменения настроек модуля, нажмите кнопку "<strong>Save &amp; Close (Сохранить и закрыть)</strong>" в верхнем левом углу.</p>
+                <p>Также необходимо загрузить следующие папки в корневую папку установки Joomla: <br>
+                  sources\to_the_root_directory\administrator <br>
+                  sources\to_the_root_directory\images <br>
+                  sources\to_the_root_directory\media <br>
+				  </p>
+    
+</section>
+
+<section id="extensions" class="block-templates">
+  <h2 class="item5"><i class="icon-fullscreen"></i> Расширения</h2>
+
+  <p>Функциональность веб-сайта Joomla можно увеличить при помощи различных расширений. Некоторые из них часто используются в наших шаблонах. В данной секции показано, как работать с расширениями.</p>
+
+<!-- ARTICLES NEWSFLASH MODULE -->
+  <div id="articles-newsflash">
+    <h3>Articles Newsflash</h3>
+
+    <div class="img-container"><figure class="img-polaroid"><img src="img/newsflash-adv-2.jpg" alt=""></figure>
+            <p class="muted text-center">Рис 11. Модуль Articles Newsflash (Advanced)</p></div>
+
+    <p>Модуль Articles Newsflash (Advanced) представляет собой расширенную версию стандартного модуля  Joomla Articles Newsflash. В дополнение к исходным функциям модуля предлагаются опции для шаблонов, основанных на Bootstrap.</p>
+
+    <h4>Дополнительные опции</h4>
+
+      <p><b>Number of columns (Количество колонок)</b> - позволяет отображать статьи в несколько колонок.</p>
+      <p><b>Custom Link (Пользовательская ссылка)</b> - позволяет отображать настраиваемую ссылку под контентом модуля. Ее можно задать на внешний URL или на страницу веб-сайта Joomla.   </p>  
+        <div class="img-container"><figure class="img-polaroid"><img src="img/newsflash-adv-1.png" alt=""></figure>
+                <p class="muted text-center">Рис 12. Пользовательская ссылка</p></div>
+       
+  <p><b>Pretext (Предварительный текст)</b> - позволяет отображать пользовательский текст перед содержимым модуля.</p>
+  <p><b>Published Date (Дата публикации)</b> - отображает дату публикации статьи. </p>
+  <p><b>Created by (Создано)</b> - показывает автора статьи.</p>
+  <p><b>Show intro images (Показывать изображения статьи)</b> - позволяет отображать картинки статьи.</p>
+  <p><b>Intro image align (Выравнивание изображений статьи)</b> - позволяет выравнивать изображения статьи.</p>
+
+  </div>
+
+
+  <!-- IMAGE SWOOP MODULE -->
+
+  <div id="image_swoop">
+    <h3>Image Swoop</h3>
+
+   <div class="img-container"><figure class="img-polaroid"> <img src="img/camera-slideshow-3.jpg" alt=""></figure>
+       <p class="muted text-center">Рис 13. Модуль Image Swoop</p></div>
+
+    <p>Модуль "Image Swoop" - это отличный адаптивный слайдер, представляющий собой комбинацию стандартного модуля  Joomla "Articles Newsflash" и бесплатного плагина jQuery с открытым исходным кодом "Camera Slideshow". Великолепно работает на компьютерах и мобильных устройствах iOs или Android. Совместим со всеми современными браузерами, начиная с IE8.</p>
+
+    <p>Модуль "Image Swoop" содержит различные настройки конфигурации и находится в меню <b>Extensions &gt; Module Manager (Расширения &gt; Менеджер модулей)</b> админ панели Joomla. Все основные опции плагина jQuery "Camera Slideshow" редактируются в настройках модуля. </p>
+
+    <div class="img-container"><figure class="img-polaroid"><img src="img/camera-slideshow-2.jpg" alt="" ></figure>
+        <p class="muted text-center">Рис 14. Настройки Image Swoop</p></div>
+
+    <p>Наведите курсором мыши на опцию, чтобы увидеть ее описание. Более детальную информацию о плагине jQuery Camera Slideshow можно найти на <a href="http://www.pixedelic.com/plugins/camera/" target="_blank">официальном веб-сайте.</a></p>
+  </div>
+
+  <!-- Olark chat -->
+
+<div id="olark">
+  <h3>Модуль TM Olark live chat</h3> 
+  <div class="img-container"><figure class="img-polaroid"><img src="img/olark.jpg" alt=""></figure> 
+  <p class="muted text-center">Рис 25. Модуль TM Olark live chat</p></div> 
+  <p>TM Olark live chat - это модуль живого чата для Joomla.</p> 
+  <div class="img-container"><figure class="img-polaroid"><img src="img/olark-2.jpg" alt=""></figure> 
+  <p class="muted text-center">Рис. 25-1. Настройки модуля TM Olark live chat</p></div> 
+  <p>В основных настройках модуля необходимо указать только идентификатор сайта, который после регистрации и заполнения всех необходимых данных будет указан на странице <a href="https://www.olark.com/install" target="_blank" rel="nofollow">https://www.olark.com/install</a></p> 
+  <div class="img-container"><figure class="img-polaroid"><img src="img/olark-3.jpg" alt=""></figure> 
+  <p class="muted text-center">Рис. 25-2. Идентификатор сайта в панели управления Olark.</p></div> 
+  <p class="box-info"><span>Вы также можете получить пробный бесплатный 6-месячный бронзовый пакет. Для этого перейдите по <a href="http://olark.com/signup/create_new_account/18981?utm_source=templatemonster&utm_medium=offer&utm_campaign=default">ссылке</a> и внесите свои регистрационные данные.</span></p>
+</div>
+
+     <!-- Cookie direcrive plugin -->
+
+ <div id="cookies">
+    <h3>Плагин Joomla Cookie Directive</h3>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/cookies-1.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 34. Плагин Joomla Cookie Directive</p></div>
+    <p>Joomla Cookie Directive - плагин для вывода баннера с сообщением об использовании куки-файлов.</p>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/cookies-2.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 34-1. Настройки плагина Joomla Cookie Directive</p></div>
+    <p>Так выглядят основные настройки плагина Joomla Cookie Directive. Более детальная информация на <a href="http://www.channeldigital.co.uk/resources/joomla-cookie-directive-plugin.html" target="_blank" rel="nofollow">официальном сайте</a>.</p>
+  </div>
+
+    <!-- Acymailing -->
+    
+  <div id="acymailing">
+    <h3>Acymailing</h3>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/acymailing-1.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 31. Компонент Acymailing</p></div>
+    <p>Acymailing - компонент подписки для Joomla!</p>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/acymailing-2.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 31-1. Настройки компонента Acymailing</p></div>
+    <p>Так выглядит главная страница компонента Acymailing в админ панели. Более детальная информация на <a href="https://www.acyba.com/acymailing/doc.html" target="_blank" rel="nofollow">официальном сайте</a>.</p>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/acymailing-3.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 31-2. Настройки модуля Acymailing</p></div>
+    <p>Так выглядит страница настроек модуля Acymailing. Более детальная информация на <a href="https://www.acyba.com/acymailing/62-acymailing-module.html" target="_blank" rel="nofollow">официальном сайте</a>.</p>
+    <p>С компонентом Acymailing также устанавливаются системные плагины:</p> 
+    <ul>
+      <li>plg_acymailing_contentplugin</li>
+      <li>plg_acymailing_managetext</li>
+      <li>plg_acymailing_online</li>
+      <li>plg_acymailing_share</li>
+      <li>plg_acymailing_stats</li>
+      <li>plg_acymailing_tablecontents</li>
+      <li>plg_acymailing_tagcbuser</li>
+      <li>plg_acymailing_tagcontent</li>
+      <li>plg_acymailing_tagsubscriber</li>
+      <li>plg_acymailing_tagsubscription</li>
+      <li>plg_acymailing_tagtime</li>
+      <li>plg_acymailing_taguser</li>
+      <li>plg_acymailing_template</li>
+      <li>plg_editors_acyeditor</li>
+      <li>plg_system_regacymailing</li>
+    </ul>
+  </div>
+
+  <!-- Social blocks -->
+
+   <div id="facebook_feed">
+    <h3>SW Facebook Display</h3>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/facebook_feed-1.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 26. Модуль SW Facebook Display</p></div>
+    <p>SW Facebook Display - модуль для вывода "Facebook Like Box".</p>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/facebook_feed-2.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 26-1. Настройки модуля SW Facebook Display</p></div>
+    <p>Так выглядят основные настройки модуля SW Facebook Display. Более детальная информация на <a href="http://socialwidgets.net/documentation/26-sw-facebook-display.html" target="_blank" rel="nofollow">официальном сайте</a>.</p>
+  </div>
+
+  <div id="pinterest_feed">
+    <h3>SW Pinterest Display</h3>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/pinterest_feed-1.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 27. Модуль SW Pinterest Display</p></div>
+    <p>SW Pinterest Display - модуль для вывода "Pinterest Board Widget".</p>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/pinterest_feed-2.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 27-1. Настройки модуля SW Pinterest Display</p></div>
+    <p>Так выглядят основные настройки модуля SW Pinterest Display. Более детальная информация на <a href="http://socialwidgets.net/documentation/28-sw-pinterest-display.html" target="_blank" rel="nofollow">официальном сайте</a>.</p>
+  </div>
+
+  <div id="twitter_feed">
+    <h3>SW Twitter Display</h3>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/twitter_feed-1.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 28. Модуль SW Twitter Display</p></div>
+    <p>SW Twitter Display - модуль для вывода "Twitter Widget".</p>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/twitter_feed-2.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 28-1. Настройки модуля SW Twitter Display</p></div>
+    <p>Так выглядят основные настройки модуля SW Twitter Display. Более детальная информация на <a href="http://socialwidgets.net/documentation/27-sw-twitter-display.html" target="_blank" rel="nofollow">официальном сайте</a>.</p>
+  </div>
+
+  <div id="instagram_feed">
+    <h3>TM Instagram</h3>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/instagram-1.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 29. Модуль TM Instagram</p></div>
+    <p>TM Instagram - модуль для вывода "Instagram Widget".</p>
+    <div class="img-container"><figure class="img-polaroid"><img src="img/instagram-2.jpg" alt=""></figure>
+    <p class="muted text-center">Рис. 29-1. Настройки модуля TM Instagram</p></div>
+    <p>Так выглядят основные настройки модуля TM Instagram. В поле Instagram username указывается название профиля в Instagram, в поле Number of photos - количество картинок, выводимых в виджете, в поле Your Instagram CLIENT ID указывается идентификатор Вашего приложения Instagram. Чтобы получить идентификатор, перейдите по ссылке <a href="https://instagram.com/accounts/login/?next=%2Fdeveloper%2F" target="_blank" rel="nofollow">https://instagram.com/accounts/login/?next=%2Fdeveloper%2F</a> и зарегистрируйтесь. Далее перейдите по ссылке <a href="http://instagram.com/developer/clients/manage/" target="_blank" rel="nofollow">http://instagram.com/developer/clients/manage/</a> и создайте там приложение. После этого у вас появятся данные Вашего приложения, в которых будет указан идентификатор (CLIENT ID).</p>
+  </div>
+   
+   
+
+<section id="addendum" class="block-templates">
+  <h2><i class="icon-question-sign"></i> Дополнение <small>Куда обращаться за помощью, поддержкой и дополнительной информацией</small> </h2>
+
+  <p>Мы постарались сделать данную документацию как можно более доступной и понятной. Тем не менее, в случае возникновения любых сложностей с VirtueMart шаблоном, предложений по улучшению шаблонов или документации, с командой технической поддержки можно связаться следующим образом:</p>
+  
+  <div id="help_support">
+    <h4>Помощь и поддержка</h4>
+    <ul class="list">
+      <li><a href="http://chat.template-help.com/"  target="_blank">Чат</a></li>
+      <li><a href="http://support.template-help.com/index.php?/Tickets/Submit"  target="_blank">Тикет-система</a></li>
+    </ul>
+  </div>
+<h2>Загрузка данных с серверов Google</h2>
+
+<p>В некоторых странах возникают трудности с подключением к серверам Google. Это может вызывать проблемы с загрузкой шрифтов Google и библиотек Java Script из Google CDN. Для того чтобы решить эту проблему, необходимо выполнить следующие шаги: </p>
+
+<h4>Не грузятся шрифты Google: </h4>
+<ol>
+<li>Откройте файл \templates\theme****\index.php</li>
+<li>Найдите строку: <br>
+<pre>$doc->addStyleSheet('//fonts.googleapis.com/css?family=[---your_web_font_name_here---]');</pre></li>
+<li>И замените его следующем кодом: <br>
+<pre>$doc->addStyleSheet('//fonts.useso.com/css?family=[---your_web_font_name_here---]');</pre></li>
+
+
+
+  <div id="help_doc">
+    <h4>Документация</h4>
+    <ul class="list">
+      <li><a href="http://docs.joomla.org/Beginners" target="_blank">Joomla! Руководство для начинающих</a></li>
+      <li><a href="http://docs.joomla.org/Category:FAQ" target="_blank">Часто задаваемые вопросы</a></li>
+      <li><a href="http://docs.joomla.org/" target="_blank">Joomla! Documentation</a></li>
+      <li><a href="/help/ru/cms-blog-templates/joomla/joomla-tutorials/" target="_blank">Joomla! туториалы</a></li>
+	  <li><a href="/help/ru/ecommerce/virtuemart/virtuemart-tutorials/" target="_blank">VirtueMart туториалы</a></li>
+    </ul>
+  </div>
+
+  <div id="joomla_extensions">
+    <h4>Joomla! Расширения</h4>
+    <p>На сайте <a href="http://extensions.joomla.org/" target="_blank">www.extensions.joomla.org</a> можно скачать более 6 тысяч модулей, плагинов и компонентов, позволяющих добавлять различный функционал к вашему веб-сайту Joomla.</p>
+  </div>
+
+  <div id="additional_links">
+    <h4>Дополнительные ссылки</h4>
+    <ul class="list">
+      <li><a href="http://virtuemart.net" target="_blank">Официальный сайт Virtuemart</a></li>
+	  <li><a href="http://forum.virtuemart.net/" target="_blank">Официальный форум Virtuemart</a></li>
+	  <li><a href="http://extensions.virtuemart.net" target="_blank">Официальные расширения для Virtuemart</a></li>
+	  <li><a href="http://docs.joomla.org/" target="_blank">Joomla CMS документация</a></li>
+    </ul>
+  </div>
+
+</section>
+
+</div>
+</div>
+</div>
+
+  </div>
+  </div>
+  </div>
+   <!-- Footer
+    ================================================== -->
+	<footer>
+		  <div class="container">        
+		   <div class="span12">
+			<span>Virtuemart 3 Документация</span><br />
+			&copy; <span id="date"></span> <span id="copyright">Template Monster</span>
+		   </div>
+		  </div>
+	</footer>
+
+
+  <div id="back-top">
+    <a href="#"><i class="icon-double-angle-up"></i></a>
+  </div>
+    
+<!-- <script src="js/bootstrap-scrollspy.js"></script>  -->
+
+<script type="text/javascript"> 
+  var _gaq = _gaq || []; 
+  _gaq.push(['_setAccount', 'UA-2787305-5']); 
+  _gaq.push(['_trackPageview']); 
+
+  (function() { 
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; 
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+  })(); 
+</script>
+    
+</body> 
+
+</html>
