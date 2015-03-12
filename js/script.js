@@ -101,7 +101,7 @@ var doc_language = getCookie('doc_language');
 	}
 
 /* Modal languages function */
-//	function modal_languages(){	
+	function modal_languages(){	
 
 		// check active language
 		var active_lang = $('#modal_languages').find('.active');
