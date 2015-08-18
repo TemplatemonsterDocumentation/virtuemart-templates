@@ -1,0 +1,72 @@
+{
+  "id": "extensions",
+  "translations": {
+    "en": "Extensions",
+    "ru": "Расширения"
+  },
+  "articles": [
+    {
+      "id": "articles-newsflash",
+      "translations": {
+        "en": "Articles Newsflash",
+        "ru": "Articles Newsflash"
+      }
+    },
+    {
+      "id": "image_swoop",
+      "translations": {
+        "en": "Image Swoop",
+        "ru": "Image Swoop"
+      }
+    },
+    {
+      "id": "olark",
+      "translations": {
+        "en": "TM Olark live chat module",
+        "ru": "TM Olark live chat module"
+      }
+    },
+    {
+      "id": "cookies",
+      "translations": {
+        "en": "Joomla Cookie Directive Plugin",
+        "ru": "Joomla Cookie Directive Plugin"
+      }
+    },
+    {
+      "id": "acymailing",
+      "translations": {
+        "en": "Acymailing",
+        "ru": "Acymailing"
+      }
+    },
+    {
+      "id": "facebook_feed",
+      "translations": {
+        "en": "SW Facebook Display",
+        "ru": "SW Facebook Display"
+      }
+    },
+    {
+      "id": "pinterest_feed",
+      "translations": {
+        "en": "SW Pinterest Display",
+        "ru": "SW Pinterest Display"
+      }
+    },
+    {
+      "id": "twitter_feed",
+      "translations": {
+        "en": "SW Twitter Display",
+        "ru": "SW Twitter Display"
+      }
+    },
+    {
+      "id": "instagram_feed",
+      "translations": {
+        "en": "TM Instagram",
+        "ru": "TM Instagram"
+      }
+    }
+  ]
+}

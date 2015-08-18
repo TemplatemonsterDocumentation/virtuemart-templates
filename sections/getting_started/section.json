@@ -1,0 +1,44 @@
+{
+  "id": "getting_started",
+  "translations": {
+    "en": "Getting Started",
+    "ru": "Начало использования"
+  },
+  "articles": [
+    {
+      "id": "complete_install",
+      "translations": {
+        "en": "Complete Installation",
+        "ru": "Полная установка"
+      }
+    },
+    {
+      "id": "template-installation",
+      "translations": {
+        "en": "Template Installation",
+        "ru": "Установка шаблона"
+      }
+    },
+    {
+      "id": "virtuemart_install",
+      "translations": {
+        "en": "Virtuemart3 installation",
+        "ru": "Установка Virtuemart3"
+      }
+    },
+    {
+      "id": "sample-data",
+      "translations": {
+        "en": "Sample Data Installation",
+        "ru": "Установка демо-данных"
+      }
+    },
+    {
+      "id": "modules-installation",
+      "translations": {
+        "en": "Modules installation",
+        "ru": "Установка модулей"
+      }
+    }
+  ]
+}
