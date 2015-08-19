@@ -46,14 +46,13 @@ if (!isset($sections)) {
             </a>
         </div>
         <div class="panel">
-            <!-- <div class="select select-version">
+            <div class="select select-version">
                 <select>
-                    <option data-href="#">Version v3-0</option>
-                    <option data-href="#" selected>Version v3-1</option>
-                    <option data-href="#">Version v2-4</option>
-                    <option data-href="#">Version v2-3</option>
+                    <option data-href="#" selected>Version v1-2</option>
+                    <option data-href="//info.template-help.com/help/quick-start-guide/virtuemart-templates/v1-1/index_en.html">Version v1-1</option>
+                    <option data-href="//info.template-help.com/help/quick-start-guide/virtuemart-templates/v1-0/index_en.html">Version v1-0</option>
                 </select>
-            </div>-->
+            </div>
             <div class="select select-lang">
                 <select>
                     <option
