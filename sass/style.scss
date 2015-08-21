@@ -105,8 +105,12 @@ ul, ol{
 }
 
 article {
-  margin-top: 80px;
-  margin-bottom: 60px;
+  padding-top: 80px;
+
+  &:first-child{
+    padding-top: 0;
+  }
+
   article{
     padding-right: 10%;
   }
