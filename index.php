@@ -41,7 +41,7 @@ if (!isset($sections)) {
 <div class="page-wrap">
     <div class="rd-mobilemenu active">
         <div class="logo">
-            <a href="<?php echo $path; ?>">
+            <a href="<?php echo $path; ?>/">
                 <img src="<?php echo $path; ?>/img/logo.png" alt="">
             </a>
         </div>
@@ -49,8 +49,8 @@ if (!isset($sections)) {
             <div class="select select-version">
                 <select>
                     <option data-href="#" selected>Version v1-2</option>
-                    <option data-href="//info.template-help.com/help/quick-start-guide/virtuemart-templates/v1-1/index_en.html">Version v1-1</option>
-                    <option data-href="//info.template-help.com/help/quick-start-guide/virtuemart-templates/v1-0/index_en.html">Version v1-0</option>
+                    <option data-href="/help/quick-start-guide/virtuemart-templates/v1-1/index_en.html">Version v1-1</option>
+                    <option data-href="/help/quick-start-guide/virtuemart-templates/v1-0/index_en.html">Version v1-0</option>
                 </select>
             </div>
             <div class="select select-lang">
